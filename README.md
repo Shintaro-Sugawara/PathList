@@ -223,6 +223,6 @@ As such, responses may take some time, and occasional misunderstandings may occu
 - All rights to **Path List / Path List Pro** belong to the developer.  
 - The Pro version binary/code is closed-source. Redistribution, modification, decompilation, and reverse engineering are prohibited.  
 - The source code of the free version is released under the **MIT License**.  
-[View PathList_1.00.py on GitHub](https://github.com/Shintaro-Sugawara/PathList/blob/main/master/src/PathList_1.00.py)
+[View PathList_1.00.py on GitHub](https://github.com/Shintaro-Sugawara/PathList/src/PathList_1.00.py)
 - Other than the Microsoft Store payment for the Pro version, no additional license fees are required.  
 - © 2025 **S. Sugawara** All rights reserved.
