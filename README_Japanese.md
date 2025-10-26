@@ -199,12 +199,6 @@ Path List Pro では、画面と同様に `/a` なしで出力可能です。
 
 ---
 
-## ■ GitHub
-
-- [GitHub リポジトリ（PathList）はこちら](https://github.com/Shintaro-Sugawara/PathList)
-
----
-
 ## ■ ご連絡先
 
 - 📧 **s.sugawara.dev@gmail.com**  
@@ -227,7 +221,7 @@ Path List Pro では、画面と同様に `/a` なしで出力可能です。
 - **Path List / Path List Pro** の著作権は、すべて開発者に帰属します。  
 - プロ版のバイナリ・コードは非公開であり、無断での再配布、改変、逆コンパイル、リバースエンジニアリング等は禁止されています。  
 - フリー版のソースコードは、**MIT ライセンス**に基づき公開しています。  
-[PathList_1.00.py を GitHub で見る](https://github.com/Shintaro-Sugawara/PathList/blob/main/src/PathList_1.00.py)
+[PathList_1.00.py を GitHub で見る](https://github.com/Shintaro-Sugawara/PathList/blob/main/master/src/PathList_1.00.py)
 - プロ版の Microsoft Store 支払いを除き、ライセンス料等は不要です。  
 
 © 2025 **S. Sugawara** All rights reserved.

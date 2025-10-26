@@ -206,12 +206,6 @@ Bitte beziehen Sie sich auf Folgendes für die Testfälle und Beispielordner:
 
 ---
 
-## GitHub
-
-- [GitHub-Repository (PathList) ist hier](https://github.com/Shintaro-Sugawara/PathList)
-
----
-
 ## Kontakt
 
 - 📧 **s.sugawara.dev@gmail.com**  
@@ -235,6 +229,6 @@ Daher kann es zu Verzögerungen bei den Antworten kommen, und gelegentlich könn
 - Der Binärcode/Quellcode der Pro-Version ist geschlossen.  
   Weitergabe, Modifikation, Dekompilierung und Reverse Engineering sind verboten.  
 - Der Quellcode der kostenlosen Version wird unter der **MIT-Lizenz** veröffentlicht.  
-[PathList_1.00.py auf GitHub ansehen](https://github.com/Shintaro-Sugawara/PathList/blob/main/src/PathList_1.00.py)
+[PathList_1.00.py auf GitHub ansehen](https://github.com/Shintaro-Sugawara/PathList/blob/main/master/src/PathList_1.00.py)
 - Abgesehen von der Microsoft Store-Zahlung für die Pro-Version sind keine zusätzlichen Lizenzgebühren erforderlich.  
 - © 2025 **S. Sugawara** Alle Rechte vorbehalten.

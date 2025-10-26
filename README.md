@@ -200,12 +200,6 @@ Please refer to the following for the test cases and sample folders used:
 
 ---
 
-## GitHub
-
-- [GitHub repository (PathList) is here](https://github.com/Shintaro-Sugawara/PathList)
-
----
-
 ## Contact
 
 - 📧 **s.sugawara.dev@gmail.com**  
@@ -219,7 +213,7 @@ As such, responses may take some time, and occasional misunderstandings may occu
 
 ## Donations
 
-- Donations are welcome. (URL to be added later)  
+- Donations are welcome. (URL to be added later.)  
 - If you haven't purchased the Pro version, please consider purchasing it instead of donating.
 
 ---
@@ -229,6 +223,6 @@ As such, responses may take some time, and occasional misunderstandings may occu
 - All rights to **Path List / Path List Pro** belong to the developer.  
 - The Pro version binary/code is closed-source. Redistribution, modification, decompilation, and reverse engineering are prohibited.  
 - The source code of the free version is released under the **MIT License**.  
-[View PathList_1.00.py on GitHub](https://github.com/Shintaro-Sugawara/PathList/blob/main/src/PathList_1.00.py)
+[View PathList_1.00.py on GitHub](https://github.com/Shintaro-Sugawara/PathList/blob/main/master/src/PathList_1.00.py)
 - Other than the Microsoft Store payment for the Pro version, no additional license fees are required.  
 - © 2025 **S. Sugawara** All rights reserved.
