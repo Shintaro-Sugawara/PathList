@@ -229,6 +229,6 @@ Daher kann es zu Verzögerungen bei den Antworten kommen, und gelegentlich könn
 - Der Binärcode/Quellcode der Pro-Version ist geschlossen.  
   Weitergabe, Modifikation, Dekompilierung und Reverse Engineering sind verboten.  
 - Der Quellcode der kostenlosen Version wird unter der **MIT-Lizenz** veröffentlicht.  
-[PathList_1.00.py auf GitHub ansehen](https://github.com/Shintaro-Sugawara/PathList/src/PathList_1.00.py)
+[PathList_1.00.py auf GitHub ansehen](https://github.com/Shintaro-Sugawara/PathList/blob/master/src/PathList_1.00.py)
 - Abgesehen von der Microsoft Store-Zahlung für die Pro-Version sind keine zusätzlichen Lizenzgebühren erforderlich.  
 - © 2025 **S. Sugawara** Alle Rechte vorbehalten.
