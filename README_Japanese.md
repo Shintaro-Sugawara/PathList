@@ -209,6 +209,14 @@ Path List Pro では、画面と同様に `/a` なしで出力可能です。
 
 ---
 
+## コントリビューションについて
+
+詳細は以下の日本語版ドキュメントをご参照ください。
+
+-  [CONTRIBUTING_Japanese.md](CONTRIBUTING_Japanese.md)
+
+---
+
 ## ■ 寄付
 
 - 寄付は歓迎です。（後日アドレスを掲載）  

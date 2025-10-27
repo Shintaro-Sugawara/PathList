@@ -211,6 +211,14 @@ As such, responses may take some time, and occasional misunderstandings may occu
 
 ---
 
+## About Contributions
+
+For more details, please refer to the documentation below.
+
+- [CONTRIBUTING.md](CONTRIBUTING.md)
+
+---
+
 ## Donations
 
 - Donations are welcome. (URL to be added later.)  

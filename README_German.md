@@ -214,6 +214,15 @@ Bitte beziehen Sie sich auf Folgendes für die Testfälle und Beispielordner:
 Anfragen in anderen Sprachen als Japanisch werden mit KI-gestützter Übersetzung bearbeitet.  
 Ich bemühe mich, auf jedes Feedback aufrichtig zu reagieren. Bitte haben Sie jedoch  Verständnis dafür, dass diese App von einer einzelnen Person entwickelt und betreut wird.  
 Daher kann es zu Verzögerungen bei den Antworten kommen, und gelegentlich können Missverständnisse aufgrund der automatischen Übersetzung auftreten.
+
+---
+
+## Beiträge
+
+Weitere Einzelheiten finden Sie im folgenden Dokument.
+
+- [CONTRIBUTING_German.md](CONTRIBUTING_German.md)
+
 ---
 
 ## Spenden
