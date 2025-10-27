@@ -61,9 +61,9 @@ Unicode に完全対応のため、使用言語以外の文字にも対応して
 アプリケーションが作成する出力ファイルの例です。  
 実際の出力内容や書式を確認するための参考としてご利用ください。
 
-- [フリー版の出力（リストモード）](docs/OutputSamples_02_Japanese/01_List_Free.txt)  
-- [プロ版の出力（リストモード）](docs/OutputSamples_02_Japanese/02_List_Pro.xlsx)  
-- [プロ版の出力（ツリーモード）](docs/OutputSamples_02_Japanese/03_Tree_Pro.txt)
+- [フリー版の出力（Listモード）](docs/OutputSamples_02_Japanese/01_List_Free.txt)  
+- [プロ版の出力（Listモード）](docs/OutputSamples_02_Japanese/02_List_Pro.xlsx)  
+- [プロ版の出力（Treeモード）](docs/OutputSamples_02_Japanese/03_Tree_Pro.txt)
 
 ---
 
