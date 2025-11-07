@@ -8,14 +8,14 @@
 
 ---
 
-## 他言語の README
+## ■ 他言語の README
 
 -  [英語版（README_English.md）](README.md)
 -  [ドイツ語版（README_German.md)](README_German.md)
 
 ---
 
-## アプリの入手先（Microsoft Store）
+## ■ アプリの入手先（Microsoft Store）
 
 -  [Path List（フリー版）] ※公開後にリンク先を掲載予定（2025.11予定）
 -  [Path List Pro（プロ版）] ※公開後にリンク先を掲載予定（2025.11予定）
@@ -209,7 +209,7 @@ Path List Pro では、画面と同様に `/a` なしで出力可能です。
 
 ---
 
-## コントリビューションについて
+## ■ コントリビューションについて
 
 詳細は以下の日本語版ドキュメントをご参照ください。
 
@@ -217,9 +217,10 @@ Path List Pro では、画面と同様に `/a` なしで出力可能です。
 
 ---
 
-## ■ 寄付
+## ■ ご支援のお願い
 
-- 寄付は歓迎です。（後日アドレスを掲載）  
+- 改善とサポート継続にご協力いただける方は、こちらからご支援をお願いいたします。  
+[Stripe Payment Links](https://buy.stripe.com/dRmfZj8dt1BFeRX3BO9sk01)  
 - プロ版を未購入の方は、寄付よりプロ版購入をご検討ください。
 
 ---

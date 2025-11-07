@@ -219,9 +219,10 @@ For more details, please refer to the documentation below.
 
 ---
 
-## Donations
+## Support
 
-- Donations are welcome. (URL to be added later.)  
+- If you'd like to support ongoing improvements and maintenance, you're welcome to contribute here.  
+[Stripe Payment Links](https://buy.stripe.com/bJe4gB8dt947h05goA9sk02)  
 - If you haven't purchased the Pro version, please consider purchasing it instead of donating.
 
 ---

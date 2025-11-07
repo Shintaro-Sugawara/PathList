@@ -146,7 +146,7 @@ tree /f > %USERPROFILE%\desktop\FileTree.txt
 
 ## Unterstützte Sprachen
 
-- Japanisch, Englisch, Deutsch  
+- Deutsch, Englisch, Japanisch  
 - Automatisches Umschalten entsprechend den Windows-Gebietsschemaeinstellungen („Sprache und Region“)  
 - Für andere Sprachen als Japanisch und Deutsch wird Englisch verwendet.
 
@@ -225,9 +225,10 @@ Weitere Einzelheiten finden Sie im folgenden Dokument.
 
 ---
 
-## Spenden
+## Unterstützung
 
-- Spenden sind willkommen. (URL wird später hinzugefügt)  
+- Wenn Sie die Weiterentwicklung und Pflege unterstützen möchten, können Sie dies hier tun.  
+[Stripe Payment Links](https://buy.stripe.com/8x200lalBfsvfW13BO9sk03)  
 - Wenn Sie die Pro-Version noch nicht gekauft haben, erwägen Sie bitte den Kauf anstelle einer Spende.
 
 ---
