@@ -21,5 +21,4 @@ Translation targets are listed in `docs/UI Strings for Localization.xlsx`.
 
     Note:  
     - The developer uses AI to create initial drafts in order to avoid placing unnecessary workload on contributors.  
-    - After the draft is created, proofreading and improvement suggestions are warmly welcomed.  
-    - Please note that even for the same language, separate submissions to the Microsoft Store may be required for each region, which can delay release.
+    - After the draft is created, proofreading and improvement suggestions are warmly welcomed.

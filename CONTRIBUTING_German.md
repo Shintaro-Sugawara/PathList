@@ -19,5 +19,4 @@ Die zu übersetzenden Texte sind in der Datei `docs/UI Strings for Localization.
 
     Note:  
     - Der Entwickler verwendet KI, um erste Entwürfe zu erstellen, und möchte so unnötigen Aufwand für Mitwirkende vermeiden.  
-    - Nach Erstellung des Entwurfs sind Überprüfungs- und Verbesserungsvorschläge sehr willkommen.  
-    - Bitte beachten Sie, dass selbst für dieselbe Sprache regionale Anforderungen des Microsoft Store zu zusätzlichen Freigabezeiten führen können.
+    - Nach Erstellung des Entwurfs sind Überprüfungs- und Verbesserungsvorschläge sehr willkommen.
