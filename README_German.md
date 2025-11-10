@@ -38,6 +38,7 @@ Sie kommuniziert nicht mit externen Servern und sammelt keine persönlichen Date
 
 ## Verwendung (Kostenlose und Pro-Versionen)
 
+![UsageAndUI_DE](docs/UsageAndUI/UsageAndUI_DE.png)
 (Nur beim ersten Gebrauch) Erstellen Sie eine Verknüpfung zu `PathList.exe` oder `PathListPro.exe` auf Ihrem Desktop.  
 Ziehen Sie einen Ordner (oder dessen Verknüpfung) auf das Anwendungssymbol.  
 
