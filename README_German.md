@@ -24,8 +24,9 @@ Dieses Projekt hat zwei Editionen:
 
 # Path List / Path List Pro
 
-Dieses Tool erstellt eine Liste vollständiger Dateipfade (vollständiger Pfad / absoluter Pfad).  
-Ziehen Sie einfach einen Ordner auf das Anwendungssymbol, um zu starten.
+Dieses Tool erstellt vollständige Dateipfade (absolute Pfade) aus Ordnern – schnell und einfach.  
+Ziehen Sie einfach einen Ordner auf das Anwendungssymbol, um zu starten.  
+In der Pro-Version können Sie außerdem Inhalte in Baumstruktur extrahieren und die Ergebnisse nach Excel oder in ähnliche Formate exportieren.
 
 Es unterstützt Unicode vollständig und stellt sicher, dass Zeichen jeder Sprache korrekt verarbeitet werden.  
 Die Benutzeroberfläche der Anwendung ist auf Japanisch, Englisch und Deutsch verfügbar, weitere Sprachen sind geplant.
@@ -105,9 +106,9 @@ Die baumstrukturierte Ansicht und die Excel-Ausgabefunktionen sind besonders nü
 - Zeitstempel (nur Pro-Version): erstellt / geändert / zugegriffen  
 - Ausgabeformate (nur Pro-Version): Text / CSV / CSV (zitiert) / Excel  
 
-  Note: Excel-Dateien können auch erzeugt werden, wenn Microsoft Excel nicht installiert ist.
+  Hinweis: Excel-Dateien können auch erzeugt werden, wenn Microsoft Excel nicht installiert ist.
 
-Note: In der Eingabeaufforderung können Unicode-Zeichen (z. B. „Résumé“) auf dem Bildschirm korrekt angezeigt werden,  
+Hinweis: In der Eingabeaufforderung können Unicode-Zeichen (z. B. „Résumé“) auf dem Bildschirm korrekt angezeigt werden,  
 aber in Ausgabedateien fehlerhaft erscheinen.  
 Path List und Path List Pro unterstützen Unicode und geben Zeichen jeder Sprache korrekt aus.
 
@@ -126,7 +127,7 @@ dir /b /s /ad > %USERPROFILE%\desktop\FolderList.txt
 - Dateiinformationen abrufen: Ja / Nein (entspricht der Option `tree /f`)  
 - Ausgabestil: Normal / ASCII-Zeichen (entspricht der Option `tree /a`)  
 
-Note: In englischen/deutschen Umgebungen beeinflusst die Option `/a` die Anzeige in der Eingabeaufforderung,  
+Hinweis: In englischen/deutschen Umgebungen beeinflusst die Option `/a` die Anzeige in der Eingabeaufforderung,  
 aber die Dateiausgabe erfolgt immer im `/a`-Format. Path List Pro ermöglicht eine Ausgabe ohne `/a`,  
 die der Bildschirmdarstellung entspricht.
 
@@ -196,13 +197,13 @@ Bitte beziehen Sie sich auf Folgendes für die Testfälle und Beispielordner:
 
 | Version | Datum       | Beschreibung       |
 |---------|-------------|--------------------|
-| 1.00    | 26.10.2025  | Erste veröffentlichte Version |
+| 1.00    | 08.11.2025  | Erste veröffentlichte Version |
 
 ### Pro-Version
 
 | Version | Datum       | Beschreibung       |
 |---------|-------------|--------------------|
-| 1.00    | 26.10.2025  | Erste veröffentlichte Version |
+| 1.00    | 08.11.2025  | Erste veröffentlichte Version |
 
 ---
 
@@ -225,7 +226,7 @@ Weitere Einzelheiten finden Sie im folgenden Dokument.
 
 ---
 
-## Unterstützung
+## Unterstützung für Entwicklung und Support
 
 - Wenn Sie die Weiterentwicklung und Pflege unterstützen möchten, können Sie dies hier tun.  
 [Stripe Payment Links](https://buy.stripe.com/8x200lalBfsvfW13BO9sk03)  

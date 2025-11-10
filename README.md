@@ -10,8 +10,8 @@ This project has two editions:
 
 ## README in Other Languages
 
-- [Japanese version (README_Japanese.md)](README_Japanese.md)
 - [German version (README_German.md)](README_German.md)
+- [Japanese version (README_Japanese.md)](README_Japanese.md)
 
 ---
 
@@ -24,8 +24,9 @@ This project has two editions:
 
 # Path List / Path List Pro
 
-This tool generates a list of full file paths (absolute paths).  
-Simply drag and drop a folder onto the application icon to start.
+This tool is a lightweight tool that quickly and easily generates a list of full file paths (absolute paths) from folders.  
+Simply drag and drop a folder onto the application icon to start.  
+In the Pro version, you can also extract folder contents in tree structure and export the results to Excel or similar formats.
 
 It fully supports Unicode, ensuring correct handling of characters from any language.  
 The application interface is available in Japanese, English, and German, with more languages planned.
@@ -37,6 +38,7 @@ It does not communicate with external servers or collect any personal data, ensu
 
 ## How to Use (Free and Pro versions)
 
+![UsageAndUI_EN](docs/UsageAndUI/UsageAndUI_EN.png)
 (For first-time use only) Create a shortcut to `PathList.exe` or `PathListPro.exe` on your desktop.  
 Drag and drop a folder (or its shortcut) onto the application icon.  
 - You can drag and drop multiple folders at once. (Tree mode is not supported.)  
@@ -141,7 +143,7 @@ tree /f > %USERPROFILE%\desktop\FileTree.txt
 
 ## Supported Languages
 
-- Japanese, English, German  
+- English, German, Japanese  
 - Automatically switches according to the Windows locale ("Language and Region" settings)  
 - For languages other than Japanese and German, English is used.
 
@@ -190,13 +192,13 @@ Please refer to the following for the test cases and sample folders used:
 
 | Version | Date       | Description        |
 |---------|------------|--------------------|
-| 1.00    | 2025-10-26 | Initial release    |
+| 1.00    | 2025-11-08 | Initial release    |
 
 ### Pro Version
 
 | Version | Date       | Description        |
 |---------|------------|--------------------|
-| 1.00    | 2025-10-26 | Initial release    |
+| 1.00    | 2025-11-08 | Initial release    |
 
 ---
 
@@ -219,7 +221,7 @@ For more details, please refer to the documentation below.
 
 ---
 
-## Support
+## Support for Development and Maintenance
 
 - If you'd like to support ongoing improvements and maintenance, you're welcome to contribute here.  
 [Stripe Payment Links](https://buy.stripe.com/bJe4gB8dt947h05goA9sk02)  
