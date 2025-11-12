@@ -10,7 +10,7 @@
 
 - [English](UsageAndUI/UsageAndUI_EN.png)
 - [日本語](UsageAndUI/UsageAndUI_JP.png)
-- [Deutsch](UsageAndUI/UsageAndUI_DE.png
+- [Deutsch](UsageAndUI/UsageAndUI_DE.png)
 
 ## 📊 Output Samples
 
