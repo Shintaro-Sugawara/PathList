@@ -18,7 +18,7 @@ This project has two editions:
 ## Where to Get the Application (Microsoft Store)
 
 - [Path List (Free version)] — Download link will be added after publication. (scheduled for November 2025)  
-- [Path List Pro (Pro version)] — Download link will be added after publication. (scheduled for November 2025)
+- [Path List Pro (Pro version)](https://apps.microsoft.com/detail/9P3C6RXVNMSW)
 
 ---
 
