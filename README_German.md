@@ -198,13 +198,13 @@ Bitte beziehen Sie sich auf Folgendes für die Testfälle und Beispielordner:
 
 | Version | Datum       | Beschreibung       |
 |---------|-------------|--------------------|
-| 1.00    | 08.11.2025  | Erste veröffentlichte Version |
+| 1.00    | 11.11.2025  | Erste veröffentlichte Version |
 
 ### Pro-Version
 
 | Version | Datum       | Beschreibung       |
 |---------|-------------|--------------------|
-| 1.00    | 08.11.2025  | Erste veröffentlichte Version |
+| 1.00    | 11.11.2025  | Erste veröffentlichte Version |
 
 ---
 

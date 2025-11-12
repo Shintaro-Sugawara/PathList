@@ -192,13 +192,13 @@ Please refer to the following for the test cases and sample folders used:
 
 | Version | Date       | Description        |
 |---------|------------|--------------------|
-| 1.00    | 2025-11-08 | Initial release    |
+| 1.00    | 2025-11-11 | Initial release    |
 
 ### Pro Version
 
 | Version | Date       | Description        |
 |---------|------------|--------------------|
-| 1.00    | 2025-11-08 | Initial release    |
+| 1.00    | 2025-11-11 | Initial release    |
 
 ---
 
