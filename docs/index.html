@@ -1,27 +1,424 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="google-site-verification" content="Bme2ZyvKQ8ZfYZ8XzEW2Z6wOyycmkpkWEU1tBC7Xijg">
-  <title>Path List Documentation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Path List / Path List Pro</title>
+  <style>
+    body {
+      font-family: "Segoe UI", "Hiragino Sans", "Helvetica Neue", Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f8;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+      color: #222;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #666;
+    }
+
+    .lang-switch {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .lang-switch button {
+      background: #ddd;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 0.95rem;
+    }
+
+    .lang-switch button:hover {
+      background: #ccc;
+    }
+
+    main {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 25px;
+      max-width: 700px;
+      width: 100%;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      border-left: 5px solid #0078d7;
+      padding-left: 10px;
+      margin-bottom: 10px;
+      color: #0078d7;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    pre code {
+      display: block;
+      background: #f0f0f0;
+      padding: 12px;
+      border-radius: 6px;
+      overflow-x: auto;
+      white-space: pre;
+      font-size: 0.95rem;
+    }
+
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    a.button {
+      display: inline-block;
+      background: #0078d7;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: 0.2s;
+      min-width: 280px;
+      text-align: center;
+    }
+
+    a.button:hover {
+      background: #005fa3;
+    }
+
+    footer {
+      margin-top: auto;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      p,
+      h2 {
+        font-size: 1rem;
+      }
+
+      a.button {
+        font-size: 1rem;
+        padding: 10px 16px;
+        min-width: 240px;
+      }
+
+      main {
+        padding: 18px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>📘 Path List Documentation</h1>
 
-  <h2>🌐 Available Languages</h2>
-  <ul>
-    <li><a href="https://github.com/Shintaro-Sugawara/PathList/blob/master/README.md">English README</a></li>
-    <li><a href="https://github.com/Shintaro-Sugawara/PathList/blob/master/README_Japanese.md">日本語 README</a></li>
-    <li><a href="https://github.com/Shintaro-Sugawara/PathList/blob/master/README_German.md">Deutsch README</a></li>
-  </ul>
+  <header>
+    <h1 id="title">Path List Pro</h1>
+    <p id="subtitle"></p>
+    <div class="lang-switch">
+      <button onclick="setLang('en')">English</button>
+      <button onclick="setLang('de')">Deutsch</button>
+      <button onclick="setLang('ja')">日本語</button>
+    </div>
+  </header>
 
-  <h2>🧭 Usage and UI Overview</h2>
-  <ul>
-    <li><a href="UsageAndUI/UsageAndUI_EN.png">English</a></li>
-    <li><a href="UsageAndUI/UsageAndUI_JP.png">日本語</a></li>
-    <li><a href="UsageAndUI/UsageAndUI_DE.png">Deutsch</a></li>
-  </ul>
+  <main>
+    <section>
+      <h2 id="features-title"></h2>
+      <ul id="features-text"></ul>
+      <div class="button-container">
+        <a href="#" class="button" id="readme-button"></a>
+      </div>
+    </section>
 
-  <p>For full documentation and resources, please visit <a href="https://github.com/Shintaro-Sugawara/PathList/tree/master">this GitHub repository</a>.</p>
+    <section>
+      <h2 id="usecases-title"></h2>
+      <ul id="usecases-text"></ul>
+    </section>
+
+    <section>
+      <h2 id="download-title"></h2>
+      <p id="download-text"></p>
+      <div class="button-container">
+        <a href="#" class="button" id="download-button-free"></a>
+        <a href="https://apps.microsoft.com/detail/9p3c6rxvnmsw?hl=ja-JP&gl=JP" class="button" id="download-button-pro"></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 S. Sugawara
+  </footer>
+
+  <script>
+    let langCode = "en";
+    const browserLang = navigator.language || navigator.userLanguage;
+    if (browserLang.startsWith("ja")) langCode = "ja";
+    else if (browserLang.startsWith("de")) langCode = "de";
+
+    const text = {
+      ja: {
+        subtitle: "フォルダパス / ファイルパスを抽出する軽量なWindowsアプリケーション",
+        featuresTitle: "特徴",
+        featuresText: [
+          {
+            title: "Path List / Path List Proは簡単にファイル/フォルダパスを抽出できます",
+            children: [
+              "抽出対象としたいフォルダをアプリアイコン上にドラッグ＆ドロップするだけで、操作は非常に簡単です。"
+            ]
+          },
+          {
+            title: "プロ版の注目機能（その他の機能はreadmeをご確認ください）",
+            children: [
+              "Microsoft Excel ファイルでの出力に対応",
+              "ツリー構造での出力に対応"
+            ]
+          },
+          {
+            title: "その他",
+            children: [
+              "機能の詳細については、GitHubの readme をご確認ください。"
+            ]
+          }
+        ],
+        readmeButton: "readme を表示する",
+        readmeLink: "https://github.com/Shintaro-Sugawara/PathList/blob/master/README_Japanese.md",
+        usecasesTitle: "こんなときに便利",
+        usecasesText: [
+          {
+            title: "ChatGPT や Copilot にパスを渡して処理を依頼する",
+            children: [
+              "AI（LLM）はパスの一覧からフォルダ構造を解析できます。",
+              "相対パスを活用して、リンク入りの Markdown（.md）や HTML ファイルの作成を AI に依頼できます",
+              "コマンドプロンプトのコードや、バッチファイルのコードの作成を依頼できます"
+            ]
+          },
+          {
+            title: "コマンドプロンプトの操作が煩わしいとき",
+            children: [
+              `<pre><code>dir /b /a-d /s > %userprofile%\\desktop\\testFile.txt</code></pre> ファイル一覧の作成`,
+              `<pre><code>dir /b /ad /s > %userprofile%\\desktop\\testFolder.txt</code></pre> フォルダ一覧の作成`,
+              `<pre><code>tree /f > %userprofile%\\desktop\\testTree.txt</code></pre> ツリー構造の作成`
+            ]
+          },
+          {
+            title: "ファイル一覧やフォルダ構造をすばやくエクセルで確認したいとき（プロ版）",
+            children: [
+              "ドライブ容量を圧迫する、容量が大きなファイルを探すのに便利です。",
+              "拡張子を指定して特定のファイル形式だけを抽出"
+            ]
+          }
+        ],
+        downloadTitle: "入手方法",
+        downloadText: "Microsoft Store からダウンロードしてください。",
+        downloadButtonFree: "フリー版を Microsoft Store で入手",
+        downloadButtonPro: "プロ版を Microsoft Store で入手",
+        freeNotAvailableMsg: "フリー版は Microsoft Store での審査中です。"
+      },
+      en: {
+        subtitle: "Simplify PATH management on Windows. A lightweight tool for developers.",
+        featuresTitle: "Features",
+        featuresText: [
+          {
+            title: "Path List / Path List Pro can easily extract file/folder paths",
+            children: [
+              "Simply drag and drop the target folder onto the app icon. It's extremely easy to use."
+            ]
+          },
+          {
+            title: "Key Pro Features (see the readme for other features)",
+            children: [
+              "Supports export to Microsoft Excel",
+              "Supports tree structure export"
+            ]
+          },
+          {
+            title: "Other",
+            children: [
+              "For details, please refer to the GitHub readme."
+            ]
+          }
+        ],
+        readmeButton: "View readme",
+        readmeLink: "https://github.com/Shintaro-Sugawara/PathList/blob/master/README.md",
+        usecasesTitle: "Typical Use Cases",
+        usecasesText: [
+          {
+            title: "Pass paths to ChatGPT or Copilot for processing",
+            children: [
+              "AI (LLM) can analyze folder structures from a list of paths.",
+              "You can ask the AI to create Markdown (.md) or HTML files with embedded links using relative paths",
+              "You can request the creation of Command Prompt scripts or batch files."
+            ]
+          },
+          {
+            title: "When using the Command Prompt is cumbersome",
+            children: [
+              `<pre><code>dir /b /a-d /s > %userprofile%\\desktop\\testFile.txt</code></pre> Create file list`,
+              `<pre><code>dir /b /ad /s > %userprofile%\\desktop\\testFolder.txt</code></pre> Create folder list`,
+              `<pre><code>tree /f > %userprofile%\\desktop\\testTree.txt</code></pre> Create folder tree`
+            ]
+          },
+          {
+            title: "Quickly check file/folder lists in Excel (Pro version)",
+            children: [
+              "Useful for finding large files that take up drive space.",
+              "Extract only specific file types by extension"
+            ]
+          }
+        ],
+        downloadTitle: "Download",
+        downloadText: "Please download it from the Microsoft Store.",
+        downloadButtonFree: "Get the Free Version from Microsoft Store",
+        downloadButtonPro: "Get the Pro Version from Microsoft Store",
+        freeNotAvailableMsg: "The Free version is under review on Microsoft Store."
+      },
+      de: {
+        subtitle: "Verwalten Sie Ihre Windows-Pfade einfach. Ein leichtes Tool für Entwickler.",
+        featuresTitle: "Funktionen",
+        featuresText: [
+          {
+            title: "Path List / Path List Pro kann Dateipfade/Ordnerpfade einfach extrahieren",
+            children: [
+              "Ziehen Sie einfach den Zielordner auf das App-Symbol – sehr einfach zu bedienen."
+            ]
+          },
+          {
+            title: "Wichtige Funktionen der Pro-Version (andere Funktionen siehe Readme)",
+            children: [
+              "Unterstützt Export in Microsoft Excel",
+              "Unterstützt Baumstruktur-Export"
+            ]
+          },
+          {
+            title: "Sonstiges",
+            children: [
+              "Weitere Informationen finden Sie im GitHub-Readme."
+            ]
+          }
+        ],
+        readmeButton: "readme anzeigen",
+        readmeLink: "https://github.com/Shintaro-Sugawara/PathList/blob/master/README_German.md",
+        usecasesTitle: "Typische Anwendungsfälle",
+        usecasesText: [
+          {
+            title: "Pfadlisten an ChatGPT oder Copilot übergeben",
+            children: [
+              "KI (LLM) kann die Ordnerstruktur aus einer Pfadliste analysieren.",
+              "Verwenden Sie relative Pfade, um die Erstellung von Markdown (.md) oder HTML-Dateien anzufordern.",
+              "Sie können die Erstellung von Befehlszeilen- oder Batch-Dateien anfordern."
+            ]
+          },
+          {
+            title: "Wenn die Arbeit mit der Eingabeaufforderung mühsam ist",
+            children: [
+              `<pre><code>dir /b /a-d /s > %userprofile%\\desktop\\testFile.txt</code></pre> Dateiliste erstellen`,
+              `<pre><code>dir /b /ad /s > %userprofile%\\desktop\\testFolder.txt</code></pre> Ordnerliste erstellen`,
+              `<pre><code>tree /f > %userprofile%\\desktop\\testTree.txt</code></pre> Baumstruktur erstellen`
+            ]
+          },
+          {
+            title: "Datei- oder Ordnerstrukturen schnell in Excel überprüfen (Pro-Version)",
+            children: [
+              "Nützlich, um große Dateien zu finden, die Speicherplatz beanspruchen.",
+              "Nur bestimmte Dateitypen nach Dateiendung extrahiere"
+            ]
+          }
+        ],
+        downloadTitle: "Download",
+        downloadText: "Bitte laden Sie es aus dem Microsoft Store herunter。",
+        downloadButtonFree: "Kostenlose Version im Microsoft Store herunterladen",
+        downloadButtonPro: "Pro-Version im Microsoft Store herunterladen",
+        freeNotAvailableMsg: "Die kostenlose Version befindet sich derzeit in der Überprüfung im Microsoft Store."
+      }
+    };
+
+    function createList(ulElement, items) {
+      ulElement.innerHTML = "";
+      items.forEach(item => {
+        const li = document.createElement("li");
+        li.innerHTML = `<strong>${item.title}</strong>`;
+        if (item.children && item.children.length > 0) {
+          const subUl = document.createElement("ul");
+          item.children.forEach(child => {
+            const subLi = document.createElement("li");
+            subLi.innerHTML = child;
+            subUl.appendChild(subLi);
+          });
+          li.appendChild(subUl);
+        }
+        ulElement.appendChild(li);
+      });
+    }
+
+    function applyText() {
+      const t = text[langCode];
+      document.getElementById("subtitle").innerText = t.subtitle;
+      document.getElementById("features-title").innerText = t.featuresTitle;
+      createList(document.getElementById("features-text"), t.featuresText);
+      document.getElementById("readme-button").innerText = t.readmeButton;
+      document.getElementById("readme-button").href = t.readmeLink;
+      document.getElementById("usecases-title").innerText = t.usecasesTitle;
+      createList(document.getElementById("usecases-text"), t.usecasesText);
+      document.getElementById("download-title").innerText = t.downloadTitle;
+      document.getElementById("download-text").innerText = t.downloadText;
+      document.getElementById("download-button-free").innerText = t.downloadButtonFree;
+      document.getElementById("download-button-pro").innerText = t.downloadButtonPro;
+    }
+
+    function setLang(lang) {
+      langCode = lang;
+      applyText();
+    }
+
+    applyText();
+
+    // フリー版ボタンのクリック時メッセージ
+    document.getElementById("download-button-free").addEventListener("click", function (e) {
+      e.preventDefault();
+      alert(text[langCode].freeNotAvailableMsg);
+    });
+  </script>
+
 </body>
 </html>
