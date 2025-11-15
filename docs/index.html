@@ -62,6 +62,13 @@
       width: 100%;
     }
 
+    .title-image {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
     section {
       margin-bottom: 30px;
     }
@@ -144,9 +151,7 @@
     }
   </style>
 </head>
-
 <body>
-
   <header>
     <h1 id="title">Path List / Path List Pro</h1>
     <p id="subtitle"></p>
@@ -158,6 +163,8 @@
   </header>
 
   <main>
+    <img id="title-image" class="title-image" src="TitleImages/Title_Main_JP.png" alt="Title Image">
+
     <section>
       <h2 id="features-title"></h2>
       <ul id="features-text"></ul>
@@ -196,53 +203,30 @@
         subtitle: "フォルダパス / ファイルパスを抽出する軽量なWindowsアプリケーション",
         featuresTitle: "特徴",
         featuresText: [
-          {
-            title: "Path List / Path List Proは簡単にファイル/フォルダパスを抽出できます",
-            children: [
-              "抽出対象としたいフォルダをアプリアイコン上にドラッグ＆ドロップするだけで、操作は非常に簡単です。"
-            ]
+          { title: "Path List / Path List Proは簡単にファイル/フォルダパスを抽出できます",
+            children: ["抽出対象としたいフォルダをアプリアイコン上にドラッグ＆ドロップするだけで、操作は非常に簡単です。"]
           },
-          {
-            title: "プロ版の注目機能（その他の機能はreadmeをご確認ください）",
-            children: [
-              "Microsoft Excel ファイルでの出力に対応",
-              "ツリー構造での出力に対応",
-              "ファイルサイズ（KB）や更新日時などの情報も取得可能"
-            ]
+          { title: "プロ版の注目機能（その他の機能はreadmeをご確認ください）",
+            children: ["Microsoft Excel ファイルでの出力に対応","ツリー構造での出力に対応","ファイルサイズ（KB）や更新日時などの情報も取得可能"]
           },
-          {
-            title: "その他",
-            children: [
-              "機能の詳細については、GitHubの readme をご確認ください。"
-            ]
+          { title: "その他",
+            children: ["機能の詳細については、GitHubの readme をご確認ください。"]
           }
         ],
         readmeButton: "readme を表示する",
         readmeLink: "https://github.com/Shintaro-Sugawara/PathList/blob/master/README_Japanese.md",
         usecasesTitle: "こんなときに便利",
         usecasesText: [
-          {
-            title: "ChatGPT や Copilot にパスを渡して処理を依頼する",
-            children: [
-              "AI（LLM）はパスの一覧からフォルダ構造を解析できます。",
-              "相対パスを活用して、リンク入りの Markdown（.md）や HTML ファイルの作成を AI に依頼できます",
-              "コマンドプロンプトのコードや、バッチファイルのコードの作成を依頼できます"
-            ]
+          { title: "ChatGPT や Copilot にパスを渡して処理を依頼する",
+            children: ["AI（LLM）はパスの一覧からフォルダ構造を解析できます。","相対パスを活用して、リンク入りの Markdown（.md）や HTML ファイルの作成を AI に依頼できます","コマンドプロンプトのコードや、バッチファイルのコードの作成を依頼できます"]
           },
-          {
-            title: "コマンドプロンプトの操作が煩わしいとき",
-            children: [
-              `<pre><code>dir /b /a-d /s > %userprofile%\\desktop\\testFile.txt</code></pre> ファイル一覧の作成`,
-              `<pre><code>dir /b /ad /s > %userprofile%\\desktop\\testFolder.txt</code></pre> フォルダ一覧の作成`,
-              `<pre><code>tree /f > %userprofile%\\desktop\\testTree.txt</code></pre> ツリー構造の作成`
-            ]
+          { title: "コマンドプロンプトの操作が煩わしいとき",
+            children: [`<pre><code>dir /b /a-d /s > %userprofile%\\desktop\\testFile.txt</code></pre> ファイル一覧の作成`,
+                       `<pre><code>dir /b /ad /s > %userprofile%\\desktop\\testFolder.txt</code></pre> フォルダ一覧の作成`,
+                       `<pre><code>tree /f > %userprofile%\\desktop\\testTree.txt</code></pre> ツリー構造の作成`]
           },
-          {
-            title: "ファイル一覧やフォルダ構造をすばやくエクセルで確認したいとき（プロ版）",
-            children: [
-              "ドライブ容量を圧迫する、容量が大きなファイルを探すのに便利です。",
-              "拡張子を指定して特定のファイル形式だけを抽出"
-            ]
+          { title: "ファイル一覧やフォルダ構造をすばやくエクセルで確認したいとき（プロ版）",
+            children: ["ドライブ容量を圧迫する、容量が大きなファイルを探すのに便利です。","拡張子を指定して特定のファイル形式だけを抽出"]
           }
         ],
         downloadTitle: "入手方法",
@@ -255,53 +239,30 @@
         subtitle: "Simplify PATH management on Windows. A lightweight tool for developers.",
         featuresTitle: "Features",
         featuresText: [
-          {
-            title: "Path List / Path List Pro can easily extract file/folder paths",
-            children: [
-              "Simply drag and drop the target folder onto the app icon. It's extremely easy to use."
-            ]
+          { title: "Path List / Path List Pro can easily extract file/folder paths",
+            children: ["Simply drag and drop the target folder onto the app icon. It's extremely easy to use."]
           },
-          {
-            title: "Key Pro Features (see the readme for other features)",
-            children: [
-              "Supports export to Microsoft Excel",
-              "Supports tree structure export",
-              "Supports extraction of file size (KB) and timestamps"
-            ]
+          { title: "Key Pro Features (see the readme for other features)",
+            children: ["Supports export to Microsoft Excel","Supports tree structure export","Supports extraction of file size (KB) and timestamps"]
           },
-          {
-            title: "Other",
-            children: [
-              "For details, please refer to the GitHub readme."
-            ]
+          { title: "Other",
+            children: ["For details, please refer to the GitHub readme."]
           }
         ],
         readmeButton: "View readme",
         readmeLink: "https://github.com/Shintaro-Sugawara/PathList/blob/master/README.md",
         usecasesTitle: "Typical Use Cases",
         usecasesText: [
-          {
-            title: "Pass paths to ChatGPT or Copilot for processing",
-            children: [
-              "AI (LLM) can analyze folder structures from a list of paths.",
-              "You can ask the AI to create Markdown (.md) or HTML files with embedded links using relative paths",
-              "You can request the creation of Command Prompt scripts or batch files."
-            ]
+          { title: "Pass paths to ChatGPT or Copilot for processing",
+            children: ["AI (LLM) can analyze folder structures from a list of paths.","You can ask the AI to create Markdown (.md) or HTML files with embedded links using relative paths","You can request the creation of Command Prompt scripts or batch files."]
           },
-          {
-            title: "When using the Command Prompt is cumbersome",
-            children: [
-              `<pre><code>dir /b /a-d /s > %userprofile%\\desktop\\testFile.txt</code></pre> Create file list`,
-              `<pre><code>dir /b /ad /s > %userprofile%\\desktop\\testFolder.txt</code></pre> Create folder list`,
-              `<pre><code>tree /f > %userprofile%\\desktop\\testTree.txt</code></pre> Create folder tree`
-            ]
+          { title: "When using the Command Prompt is cumbersome",
+            children: [`<pre><code>dir /b /a-d /s > %userprofile%\\desktop\\testFile.txt</code></pre> Create file list`,
+                       `<pre><code>dir /b /ad /s > %userprofile%\\desktop\\testFolder.txt</code></pre> Create folder list`,
+                       `<pre><code>tree /f > %userprofile%\\desktop\\testTree.txt</code></pre> Create folder tree`]
           },
-          {
-            title: "Quickly check file/folder lists in Excel (Pro version)",
-            children: [
-              "Useful for finding large files that take up drive space.",
-              "Extract only specific file types by extension"
-            ]
+          { title: "Quickly check file/folder lists in Excel (Pro version)",
+            children: ["Useful for finding large files that take up drive space.","Extract only specific file types by extension"]
           }
         ],
         downloadTitle: "Download",
@@ -314,53 +275,30 @@
         subtitle: "Verwalten Sie Ihre Windows-Pfade einfach. Ein leichtes Tool für Entwickler.",
         featuresTitle: "Funktionen",
         featuresText: [
-          {
-            title: "Path List / Path List Pro kann Dateipfade/Ordnerpfade einfach extrahieren",
-            children: [
-              "Ziehen Sie einfach den Zielordner auf das App-Symbol – sehr einfach zu bedienen."
-            ]
+          { title: "Path List / Path List Pro kann Dateipfade/Ordnerpfade einfach extrahieren",
+            children: ["Ziehen Sie einfach den Zielordner auf das App-Symbol – sehr einfach zu bedienen."]
           },
-          {
-            title: "Wichtige Funktionen der Pro-Version (andere Funktionen siehe Readme)",
-            children: [
-              "Unterstützt Export in Microsoft Excel",
-              "Unterstützt Baumstruktur-Export",
-              "Unterstützt das Extrahieren von Dateigröße (KB) und Zeitstempeln"
-            ]
+          { title: "Wichtige Funktionen der Pro-Version (andere Funktionen siehe Readme)",
+            children: ["Unterstützt Export in Microsoft Excel","Unterstützt Baumstruktur-Export","Unterstützt das Extrahieren von Dateigröße (KB) und Zeitstempeln"]
           },
-          {
-            title: "Sonstiges",
-            children: [
-              "Weitere Informationen finden Sie im GitHub-Readme."
-            ]
+          { title: "Sonstiges",
+            children: ["Weitere Informationen finden Sie im GitHub-Readme."]
           }
         ],
         readmeButton: "readme anzeigen",
         readmeLink: "https://github.com/Shintaro-Sugawara/PathList/blob/master/README_German.md",
         usecasesTitle: "Typische Anwendungsfälle",
         usecasesText: [
-          {
-            title: "Pfadlisten an ChatGPT oder Copilot übergeben",
-            children: [
-              "KI (LLM) kann die Ordnerstruktur aus einer Pfadliste analysieren.",
-              "Verwenden Sie relative Pfade, um die Erstellung von Markdown (.md) oder HTML-Dateien anzufordern.",
-              "Sie können die Erstellung von Befehlszeilen- oder Batch-Dateien anfordern."
-            ]
+          { title: "Pfadlisten an ChatGPT oder Copilot übergeben",
+            children: ["KI (LLM) kann die Ordnerstruktur aus einer Pfadliste analysieren.","Verwenden Sie relative Pfade, um die Erstellung von Markdown (.md) oder HTML-Dateien anzufordern.","Sie können die Erstellung von Befehlszeilen- oder Batch-Dateien anfordern."]
           },
-          {
-            title: "Wenn die Arbeit mit der Eingabeaufforderung mühsam ist",
-            children: [
-              `<pre><code>dir /b /a-d /s > %userprofile%\\desktop\\testFile.txt</code></pre> Dateiliste erstellen`,
-              `<pre><code>dir /b /ad /s > %userprofile%\\desktop\\testFolder.txt</code></pre> Ordnerliste erstellen`,
-              `<pre><code>tree /f > %userprofile%\\desktop\\testTree.txt</code></pre> Baumstruktur erstellen`
-            ]
+          { title: "Wenn die Arbeit mit der Eingabeaufforderung mühsam ist",
+            children: [`<pre><code>dir /b /a-d /s > %userprofile%\\desktop\\testFile.txt</code></pre> Dateiliste erstellen`,
+                       `<pre><code>dir /b /ad /s > %userprofile%\\desktop\\testFolder.txt</code></pre> Ordnerliste erstellen`,
+                       `<pre><code>tree /f > %userprofile%\\desktop\\testTree.txt</code></pre> Baumstruktur erstellen`]
           },
-          {
-            title: "Datei- oder Ordnerstrukturen schnell in Excel überprüfen (Pro-Version)",
-            children: [
-              "Nützlich, um große Dateien zu finden, die Speicherplatz beanspruchen.",
-              "Nur bestimmte Dateitypen nach Dateiendung extrahieren"
-            ]
+          { title: "Datei- oder Ordnerstrukturen schnell in Excel überprüfen (Pro-Version)",
+            children: ["Nützlich, um große Dateien zu finden, die Speicherplatz beanspruchen.","Nur bestimmte Dateitypen nach Dateiendung extrahieren"]
           }
         ],
         downloadTitle: "Download",
@@ -402,6 +340,11 @@
       document.getElementById("download-text").innerText = t.downloadText;
       document.getElementById("download-button-free").innerText = t.downloadButtonFree;
       document.getElementById("download-button-pro").innerText = t.downloadButtonPro;
+
+      const titleImg = document.getElementById("title-image");
+      if (langCode === "ja") titleImg.src = "TitleImages/Title_Main_JP.png";
+      else if (langCode === "en") titleImg.src = "TitleImages/Title_Main_EN.png";
+      else if (langCode === "de") titleImg.src = "TitleImages/Title_Main_DE.png";
     }
 
     function setLang(lang) {
@@ -416,6 +359,5 @@
       alert(text[langCode].freeNotAvailableMsg);
     });
   </script>
-
 </body>
 </html>
