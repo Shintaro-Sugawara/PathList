@@ -168,7 +168,7 @@
 
   <main>
     <div class="title-container">
-      <img id="title-image" class="title-image" src="TitleImages/TitleVideo.png" alt="Title Image">
+      <img id="title-image" class="title-image" src="TitleImages/Title_Main_EN.png" alt="Title Image">
     </div>
 
     <section>
@@ -344,6 +344,7 @@
 
     function applyText() {
       const t = text[langCode];
+
       document.getElementById("subtitle").innerText = t.subtitle;
       document.getElementById("features-title").innerText = t.featuresTitle;
       createList(document.getElementById("features-text"), t.featuresText);
@@ -356,10 +357,12 @@
       document.getElementById("download-button-free").innerText = t.downloadButtonFree;
       document.getElementById("download-button-pro").innerText = t.downloadButtonPro;
 
-      // タイトル画像は共通サムネイル
+      // タイトル画像を言語ごとに設定
       const titleContainer = document.querySelector(".title-container");
       const titleImage = document.getElementById("title-image");
-      titleImage.src = "TitleImages/TitleVideo.png"; 
+      if (langCode === "ja") titleImage.src = "TitleImages/Title_Main_JP.png";
+      else if (langCode === "en") titleImage.src = "TitleImages/Title_Main_EN.png";
+      else if (langCode === "de") titleImage.src = "TitleImages/Title_Main_DE.png";
 
       // クリックでモーダル再生
       titleContainer.onclick = () => {
@@ -378,6 +381,7 @@
 
     applyText();
 
+    // フリー版ボタンの挙動
     document.getElementById("download-button-free").addEventListener("click", function (e) {
       e.preventDefault();
       alert(text[langCode].freeNotAvailableMsg);
@@ -402,21 +406,6 @@
         modal.style.display = "none";
       }
     };
-
-    // 言語切替関数
-    function setLang(lang) {
-      langCode = lang;
-      applyText();
-    }
-
-    applyText();
-
-    // フリー版ボタンの挙動
-    document.getElementById("download-button-free").addEventListener("click", function (e) {
-      e.preventDefault();
-      alert(text[langCode].freeNotAvailableMsg);
-    });
-
   </script>
 </body>
 </html>
