@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
@@ -16,30 +16,25 @@
       min-height: 100vh;
       padding: 20px;
     }
-
     header {
       text-align: center;
       margin-bottom: 30px;
     }
-
     header h1 {
       font-size: 2.2rem;
       margin-bottom: 10px;
       color: #222;
     }
-
     header p {
       font-size: 1.2rem;
       color: #666;
     }
-
     .lang-switch {
       margin-top: 10px;
       display: flex;
       justify-content: center;
       gap: 10px;
     }
-
     .lang-switch button {
       background: #ddd;
       border: none;
@@ -48,11 +43,9 @@
       cursor: pointer;
       font-size: 0.95rem;
     }
-
     .lang-switch button:hover {
       background: #ccc;
     }
-
     main {
       background: #fff;
       border-radius: 12px;
@@ -61,18 +54,20 @@
       max-width: 700px;
       width: 100%;
     }
-
-    .title-image {
+    .title-container {
+      position: relative;
+      margin-bottom: 20px;
+    }
+    .title-image,
+    .title-video {
       width: 100%;
       height: auto;
       border-radius: 12px;
-      margin-bottom: 20px;
+      cursor: pointer;
     }
-
     section {
       margin-bottom: 30px;
     }
-
     h2 {
       font-size: 1.5rem;
       border-left: 5px solid #0078d7;
@@ -80,16 +75,13 @@
       margin-bottom: 10px;
       color: #0078d7;
     }
-
     ul {
       margin: 0;
       padding-left: 20px;
     }
-
     li {
       margin-bottom: 6px;
     }
-
     pre code {
       display: block;
       background: #f0f0f0;
@@ -99,7 +91,6 @@
       white-space: pre;
       font-size: 0.95rem;
     }
-
     .button-container {
       display: flex;
       flex-direction: column;
@@ -107,7 +98,6 @@
       gap: 12px;
       margin-top: 20px;
     }
-
     a.button {
       display: inline-block;
       background: #0078d7;
@@ -120,11 +110,9 @@
       min-width: 280px;
       text-align: center;
     }
-
     a.button:hover {
       background: #005fa3;
     }
-
     footer {
       margin-top: auto;
       text-align: center;
@@ -132,22 +120,38 @@
       font-size: 0.9rem;
       color: #777;
     }
-
     @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.8rem;
-      }
-      p, h2 {
-        font-size: 1rem;
-      }
-      a.button {
-        font-size: 1rem;
-        padding: 10px 16px;
-        min-width: 240px;
-      }
-      main {
-        padding: 18px;
-      }
+      header h1 { font-size: 1.8rem; }
+      p, h2 { font-size: 1rem; }
+      a.button { font-size: 1rem; padding: 10px 16px; min-width: 240px; }
+      main { padding: 18px; }
+    }
+    /* モーダル用 */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.7);
+      justify-content: center;
+      align-items: center;
+    }
+    .modal video {
+      width: 80%;
+      max-width: 1080px;
+      height: auto;
+      border-radius: 12px;
+    }
+    .modal-close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 2rem;
+      color: #fff;
+      cursor: pointer;
     }
   </style>
 </head>
@@ -163,7 +167,9 @@
   </header>
 
   <main>
-    <img id="title-image" class="title-image" src="TitleImages/Title_Main_JP.png" alt="Title Image">
+    <div class="title-container">
+      <img id="title-image" class="title-image" src="TitleImages/TitleVideo.png" alt="Title Image">
+    </div>
 
     <section>
       <h2 id="features-title"></h2>
@@ -187,6 +193,12 @@
       </div>
     </section>
   </main>
+
+  <!-- モーダル -->
+  <div class="modal" id="video-modal">
+    <span class="modal-close" id="modal-close">&times;</span>
+    <video id="modal-video" controls></video>
+  </div>
 
   <footer>
     © 2025 S. Sugawara
@@ -233,7 +245,8 @@
         downloadText: "Microsoft Store からダウンロードしてください。",
         downloadButtonFree: "フリー版を Microsoft Store で入手",
         downloadButtonPro: "プロ版を Microsoft Store で入手",
-        freeNotAvailableMsg: "フリー版は Microsoft Store での審査中です。"
+        freeNotAvailableMsg: "フリー版は Microsoft Store での審査中です。",
+        titleVideo: "TitleImages/TitleVideo_JP.mp4",
       },
       en: {
         subtitle: "Easily extract folder and file paths on Windows. A lightweight tool.",
@@ -269,7 +282,8 @@
         downloadText: "Please download it from the Microsoft Store.",
         downloadButtonFree: "Get the Free Version from Microsoft Store",
         downloadButtonPro: "Get the Pro Version from Microsoft Store",
-        freeNotAvailableMsg: "The Free version is under review on Microsoft Store."
+        freeNotAvailableMsg: "The Free version is under review on Microsoft Store.",
+        titleVideo: "TitleImages/TitleVideo_EN.mp4",
       },
       de: {
         subtitle: "Ordner- und Dateipfade unter Windows einfach extrahieren. Ein leichtes Tool.",
@@ -305,7 +319,8 @@
         downloadText: "Bitte laden Sie es aus dem Microsoft Store herunter。",
         downloadButtonFree: "Kostenlose Version im Microsoft Store herunterladen",
         downloadButtonPro: "Pro-Version im Microsoft Store herunterladen",
-        freeNotAvailableMsg: "Die kostenlose Version befindet sich derzeit in der Überprüfung im Microsoft Store."
+        freeNotAvailableMsg: "Die kostenlose Version befindet sich derzeit in der Überprüfung im Microsoft Store.",
+        titleVideo: "TitleImages/TitleVideo_DE.mp4",
       }
     };
 
@@ -341,10 +356,19 @@
       document.getElementById("download-button-free").innerText = t.downloadButtonFree;
       document.getElementById("download-button-pro").innerText = t.downloadButtonPro;
 
-      const titleImg = document.getElementById("title-image");
-      if (langCode === "ja") titleImg.src = "TitleImages/Title_Main_JP.png";
-      else if (langCode === "en") titleImg.src = "TitleImages/Title_Main_EN.png";
-      else if (langCode === "de") titleImg.src = "TitleImages/Title_Main_DE.png";
+      // タイトル画像は共通サムネイル
+      const titleContainer = document.querySelector(".title-container");
+      const titleImage = document.getElementById("title-image");
+      titleImage.src = "TitleImages/TitleVideo.png"; 
+
+      // クリックでモーダル再生
+      titleContainer.onclick = () => {
+        const modal = document.getElementById("video-modal");
+        const modalVideo = document.getElementById("modal-video");
+        modalVideo.src = t.titleVideo;
+        modal.style.display = "flex";
+        modalVideo.play();
+      };
     }
 
     function setLang(lang) {
@@ -358,6 +382,41 @@
       e.preventDefault();
       alert(text[langCode].freeNotAvailableMsg);
     });
+
+    // モーダル閉じる
+    document.getElementById("modal-close").onclick = () => {
+      const modal = document.getElementById("video-modal");
+      const modalVideo = document.getElementById("modal-video");
+      modalVideo.pause();
+      modalVideo.currentTime = 0;
+      modal.style.display = "none";
+    };
+
+    // モーダル背景クリックでも閉じる
+    document.getElementById("video-modal").onclick = (e) => {
+      if (e.target.id === "video-modal") {
+        const modal = document.getElementById("video-modal");
+        const modalVideo = document.getElementById("modal-video");
+        modalVideo.pause();
+        modalVideo.currentTime = 0;
+        modal.style.display = "none";
+      }
+    };
+
+    // 言語切替関数
+    function setLang(lang) {
+      langCode = lang;
+      applyText();
+    }
+
+    applyText();
+
+    // フリー版ボタンの挙動
+    document.getElementById("download-button-free").addEventListener("click", function (e) {
+      e.preventDefault();
+      alert(text[langCode].freeNotAvailableMsg);
+    });
+
   </script>
 </body>
 </html>
