@@ -2,6 +2,20 @@
 ![Lizenz: Pro-Version Proprietary](https://img.shields.io/badge/License-Proprietary-red.svg)
 ![Plattform: Windows](https://img.shields.io/badge/Platform-Windows-blue.svg)
 ![Sprache: Python 3.10+](https://img.shields.io/badge/Language-Python_3.10+-yellow.svg)  
+
+---
+
+# ⚠️ Hinweis (Bitte lesen)
+
+Die folgenden Updates werden in einer neuen Version enthalten sein, die in Kürze veröffentlicht wird.
+
+Wir bitten um Entschuldigung, aber falls Sie die Anwendung bereits heruntergeladen haben, warten Sie bitte noch ein wenig.
+
+- Da manuell erstellte Verknüpfungen möglicherweise nicht korrekt funktionieren, wird ein **Programm zur Erstellung von Verknüpfungen** mitgeliefert.
+- Die Anwendung **funktioniert möglicherweise nicht korrekt auf ARM-basierten CPUs (z. B. Snapdragon), wenn sie unter x86-Emulation ausgeführt wird**. Wir werden Unterstützung für diesen Fall hinzufügen.
+
+---
+
 Dieses Projekt hat zwei Editionen:
 - **Kostenlose Version**: MIT-lizenziert, Quellcode verfügbar  
 - **Pro-Version**: Proprietär, Quellcode geschlossen

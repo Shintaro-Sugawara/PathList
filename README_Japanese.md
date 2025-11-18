@@ -2,6 +2,19 @@
 ![License: プロ版 Proprietary](https://img.shields.io/badge/License-Proprietary-red.svg)
 ![Platform: Windows](https://img.shields.io/badge/Platform-Windows-blue.svg)
 ![Language: Python 3.10+](https://img.shields.io/badge/Language-Python_3.10+-yellow.svg)  
+
+---
+
+# ⚠️ 注意（必ずお読みください）
+
+以下のアップデートを行い、近日中に再リリース予定です。  
+申し訳ありませんが、既にダウンロード済の方はしばらくお待ちください。
+
+- 手作業で作成したショートカットは正しく動作しない場合があるため、**ショートカット作成用プログラムを同梱**します。  
+- **Snapdragon などの Arm 系 CPU 上での x86 エミュレーション実行**では正しく動作しない可能性が高いため、これに対応します。
+
+---
+
 このプロジェクトには2つの版があります：
 - **フリー版**：MITライセンス、ソースコード公開  
 - **プロ版**：非公開 / 商用ライセンス  

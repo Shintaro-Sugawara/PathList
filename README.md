@@ -2,6 +2,20 @@
 ![License: Pro version Proprietary](https://img.shields.io/badge/License-Proprietary-red.svg)
 ![Platform: Windows](https://img.shields.io/badge/Platform-Windows-blue.svg)
 ![Language: Python 3.10+](https://img.shields.io/badge/Language-Python_3.10+-yellow.svg)  
+
+---
+
+# ⚠️ Notice (Please Read)
+
+The following updates will be included in a new release coming soon.
+
+We apologize for the inconvenience, but if you have already downloaded the application, please wait for a little while.
+
+- Since manually created shortcuts may not work correctly, a **shortcut creation utility will be included**.
+- The application may **not work properly on Arm-based CPUs (such as Snapdragon) when running under x86 emulation**. We will add support for this scenario.
+
+---
+
 This project has two editions:
 - **Free version**: MIT licensed, source code available  
 - **Pro version**: Proprietary, closed source
