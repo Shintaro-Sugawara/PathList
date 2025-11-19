@@ -7,12 +7,10 @@
 
 # ⚠️ Notice (Please Read)
 
-The following updates will be included in a new release coming soon.
-
-We apologize for the inconvenience, but if you have already downloaded the application, please wait for a little while.
-
-- Since manually created shortcuts may not work correctly, a **shortcut creation utility will be included**.
-- The application may **not work properly on Arm-based CPUs (such as Snapdragon) when running under x86 emulation**. We will add support for this scenario.
+- The application is designed to run on **Snapdragon (Arm-based CPU) with x64 emulation**, but the developer does not own an Arm-based PC, so testing has not been conducted.  
+   - The Excel export feature on Arm-based CPU environments is **not supported**.  
+- Support for Excel export on Arm-based PCs is **not planned** at this time.  
+   - Because both the Arm version and the x64 version of Excel would need to be available.
 
 ---
 
@@ -53,7 +51,8 @@ It does not communicate with external servers or collect any personal data, ensu
 ## How to Use (Free and Pro versions)
 
 ![UsageAndUI_EN](docs/UsageAndUI/UsageAndUI_EN.png)
-(For first-time use only) Create a shortcut to `PathList.exe` or `PathListPro.exe` on your desktop.  
+(For first-time use only) Launch the `Path List Shortcut` or `Path List Pro Shortcut` from the Start menu to create a desktop shortcut.  
+
 Drag and drop a folder (or its shortcut) onto the application icon.  
 - You can drag and drop multiple folders at once. (Tree mode is not supported.)  
 In the dialog that appears, select the output settings and click **[OK]**.  
@@ -204,15 +203,19 @@ Please refer to the following for the test cases and sample folders used:
 
 ### Free Version
 
-| Version | Date       | Description        |
-|---------|------------|--------------------|
-| 1.00    | 2025-11-11 | Initial release    |
+| Version | Date       | Description                                                                 |
+|---------|------------|-----------------------------------------------------------------------------|
+| 1.00    | 2025-11-08 | Initial release                                                             |
+| 1.01    | 2025-11-14 | Fixed issues found during Microsoft Store submission process               |
+| 1.02    | 2025-11-19 | 1. Added a shortcut creation feature (in some cases, the standard shortcut creation process cannot pass the path of the dropped folder to the application) <br> 2. Redesigned to allow folder contents to be retrieved even in x86 emulation environments on Snapdragon (ARM) CPUs |
 
 ### Pro Version
 
-| Version | Date       | Description        |
-|---------|------------|--------------------|
-| 1.00    | 2025-11-11 | Initial release    |
+| Version | Date       | Description                                                                 |
+|---------|------------|-----------------------------------------------------------------------------|
+| 1.00    | 2025-11-08 | Initial release                                                             |
+| 1.01    | 2025-11-19 | Version 1.02 was skipped to align version numbers with the Free edition     |
+| 1.02    | 2025-11-19 | 1. Added a shortcut creation feature (in some cases, the standard shortcut creation process cannot pass the path of the dropped folder to the application) <br> 2. Redesigned to allow folder contents to be retrieved even in x86 emulation environments on Snapdragon (ARM) CPUs |
 
 ---
 
@@ -248,6 +251,6 @@ For more details, please refer to the documentation below.
 - All rights to **Path List / Path List Pro** belong to the developer.  
 - The Pro version binary/code is closed-source. Redistribution, modification, decompilation, and reverse engineering are prohibited.  
 - The source code of the free version is released under the **MIT License**.  
-[View PathList_1.00.py on GitHub](https://github.com/Shintaro-Sugawara/PathList/blob/master/src/PathList_1.00.py)
+[View PathList_1.03.py on GitHub](https://github.com/Shintaro-Sugawara/PathList/blob/master/src/PathList_1.03.py)
 - Other than the Microsoft Store payment for the Pro version, no additional license fees are required.  
 - © 2025 **S. Sugawara** All rights reserved.

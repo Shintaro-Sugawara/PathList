@@ -7,12 +7,10 @@
 
 # ⚠️ Hinweis (Bitte lesen)
 
-Die folgenden Updates werden in einer neuen Version enthalten sein, die in Kürze veröffentlicht wird.
-
-Wir bitten um Entschuldigung, aber falls Sie die Anwendung bereits heruntergeladen haben, warten Sie bitte noch ein wenig.
-
-- Da manuell erstellte Verknüpfungen möglicherweise nicht korrekt funktionieren, wird ein **Programm zur Erstellung von Verknüpfungen** mitgeliefert.
-- Die Anwendung **funktioniert möglicherweise nicht korrekt auf ARM-basierten CPUs (z. B. Snapdragon), wenn sie unter x86-Emulation ausgeführt wird**. Wir werden Unterstützung für diesen Fall hinzufügen.
+- Die Anwendung ist so konzipiert, dass sie auf **Snapdragon (ARM-CPU) mit x64-Emulation** läuft, aber der Entwickler besitzt keinen ARM-basierten PC, daher wurden keine Tests durchgeführt.  
+   - Die Excel-Exportfunktion auf ARM-basierten CPUs wird **nicht unterstützt**.  
+- Die Unterstützung des Excel-Exports auf ARM-basierten PCs ist **derzeit nicht geplant**.  
+   - Da sowohl die ARM-Version als auch die x64-Version von Excel verfügbar sein müssten.
 
 ---
 
@@ -53,9 +51,9 @@ Sie kommuniziert nicht mit externen Servern und sammelt keine persönlichen Date
 ## Verwendung (Kostenlose und Pro-Versionen)
 
 ![UsageAndUI_DE](docs/UsageAndUI/UsageAndUI_DE.png)
-(Nur beim ersten Gebrauch) Erstellen Sie eine Verknüpfung zu `PathList.exe` oder `PathListPro.exe` auf Ihrem Desktop.  
-Ziehen Sie einen Ordner (oder dessen Verknüpfung) auf das Anwendungssymbol.  
+(Nur beim ersten Gebrauch) Starten Sie das `Path List Shortcut` oder `Path List Pro Shortcut` über das Startmenü, um eine Verknüpfung auf dem Desktop zu erstellen.  
 
+Ziehen Sie einen Ordner (oder dessen Verknüpfung) auf das Anwendungssymbol.  
 - Sie können mehrere Ordner gleichzeitig ziehen und ablegen. (Baummodus wird nicht unterstützt.)  
 Im angezeigten Dialog wählen Sie die Ausgabeoptionen und klicken auf **[OK]**.  
 - Wenn Sie die Standardeinstellungen verwenden möchten, drücken Sie einfach **[Enter]**.  
@@ -210,15 +208,19 @@ Bitte beziehen Sie sich auf Folgendes für die Testfälle und Beispielordner:
 
 ### Free-Version
 
-| Version | Datum       | Beschreibung       |
-|---------|-------------|--------------------|
-| 1.00    | 11.11.2025  | Erste veröffentlichte Version |
+| Version | Datum       | Beschreibung                                                                 |
+|---------|------------|----------------------------------------------------------------------------|
+| 1.00    | 08.11.2025 | Erste Veröffentlichung                                                      |
+| 1.01    | 14.11.2025 | Fehler behoben, die während des Microsoft Store-Einreichungsprozesses festgestellt wurden |
+| 1.02    | 19.11.2025 | 1. Hinzufügen einer Funktion zum Erstellen von Verknüpfungen (in einigen Fällen kann der Standardvorgang zum Erstellen von Verknüpfungen den Pfad des abgelegten Ordners nicht an die Anwendung übergeben) <br> 2. Neu gestaltet, um das Abrufen von Ordnerinhalten auch in x86-Emulationsumgebungen auf Snapdragon-(ARM-)CPUs zu ermöglichen |
 
 ### Pro-Version
 
-| Version | Datum       | Beschreibung       |
-|---------|-------------|--------------------|
-| 1.00    | 11.11.2025  | Erste veröffentlichte Version |
+| Version | Datum       | Beschreibung                                                                 |
+|---------|------------|----------------------------------------------------------------------------|
+| 1.00    | 08.11.2025 | Erste Veröffentlichung                                                      |
+| 1.01    | 19.11.2025 | Version 1.02 wurde übersprungen, um die Versionsnummer mit der Free-Version abzustimmen |
+| 1.02    | 19.11.2025 | 1. Hinzufügen einer Funktion zum Erstellen von Verknüpfungen (in einigen Fällen kann der Standardvorgang zum Erstellen von Verknüpfungen den Pfad des abgelegten Ordners nicht an die Anwendung übergeben) <br> 2. Neu gestaltet, um das Abrufen von Ordnerinhalten auch in x86-Emulationsumgebungen auf Snapdragon-(ARM-)CPUs zu ermöglichen |
 
 ---
 
@@ -255,6 +257,6 @@ Weitere Einzelheiten finden Sie im folgenden Dokument.
 - Der Binärcode/Quellcode der Pro-Version ist geschlossen.  
   Weitergabe, Modifikation, Dekompilierung und Reverse Engineering sind verboten.  
 - Der Quellcode der kostenlosen Version wird unter der **MIT-Lizenz** veröffentlicht.  
-[PathList_1.00.py auf GitHub ansehen](https://github.com/Shintaro-Sugawara/PathList/blob/master/src/PathList_1.00.py)
+[PathList_1.03.py auf GitHub ansehen](https://github.com/Shintaro-Sugawara/PathList/blob/master/src/PathList_1.03.py)
 - Abgesehen von der Microsoft Store-Zahlung für die Pro-Version sind keine zusätzlichen Lizenzgebühren erforderlich.  
 - © 2025 **S. Sugawara** Alle Rechte vorbehalten.
