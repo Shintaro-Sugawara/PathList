@@ -25,15 +25,6 @@
       margin-bottom: 10px;
       color: #222;
     }
-    #update-notice {
-      background: #fff3cd;
-      color: #856404;
-      padding: 12px 16px;
-      border-radius: 6px;
-      margin-bottom: 12px;
-      font-weight: bold;
-      white-space: pre-line;
-    }
     header p {
       font-size: 1.2rem;
       color: #666;
@@ -52,7 +43,9 @@
       cursor: pointer;
       font-size: 0.95rem;
     }
-    .lang-switch button:hover { background: #ccc; }
+    .lang-switch button:hover {
+      background: #ccc;
+    }
     main {
       background: #fff;
       border-radius: 12px;
@@ -61,14 +54,20 @@
       max-width: 700px;
       width: 100%;
     }
-    .title-container { position: relative; margin-bottom: 20px; }
-    .title-image, .title-video {
+    .title-container {
+      position: relative;
+      margin-bottom: 20px;
+    }
+    .title-image,
+    .title-video {
       width: 100%;
       height: auto;
       border-radius: 12px;
       cursor: pointer;
     }
-    section { margin-bottom: 30px; }
+    section {
+      margin-bottom: 30px;
+    }
     h2 {
       font-size: 1.5rem;
       border-left: 5px solid #0078d7;
@@ -76,8 +75,13 @@
       margin-bottom: 10px;
       color: #0078d7;
     }
-    ul { margin: 0; padding-left: 20px; }
-    li { margin-bottom: 6px; }
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 6px;
+    }
     pre code {
       display: block;
       background: #f0f0f0;
@@ -106,7 +110,9 @@
       min-width: 280px;
       text-align: center;
     }
-    a.button:hover { background: #005fa3; }
+    a.button:hover {
+      background: #005fa3;
+    }
     footer {
       margin-top: auto;
       text-align: center;
@@ -120,6 +126,7 @@
       a.button { font-size: 1rem; padding: 10px 16px; min-width: 240px; }
       main { padding: 18px; }
     }
+    /* モーダル用 */
     .modal {
       display: none;
       position: fixed;
@@ -132,7 +139,12 @@
       justify-content: center;
       align-items: center;
     }
-    .modal video { width: 80%; max-width: 1080px; height: auto; border-radius: 12px; }
+    .modal video {
+      width: 80%;
+      max-width: 1080px;
+      height: auto;
+      border-radius: 12px;
+    }
     .modal-close {
       position: absolute;
       top: 20px;
@@ -143,16 +155,10 @@
     }
   </style>
 </head>
-
 <body>
   <header>
     <h1 id="title">Path List / Path List Pro</h1>
-
-    <!-- アップデート通知 -->
-    <div id="update-notice"></div>
-
     <p id="subtitle"></p>
-
     <div class="lang-switch">
       <button onclick="setLang('en')">English</button>
       <button onclick="setLang('de')">Deutsch</button>
@@ -207,75 +213,114 @@
     const text = {
       ja: {
         subtitle: "フォルダパス / ファイルパスを抽出する軽量なWindowsアプリケーション",
-        updateNotice: "⚠️ 以下のアップデートを行い、近日中に再リリース予定です。既にダウンロード済みの方はしばらくお待ちください。\n- 手作業で作成したショートカットは正しく動作しない場合があるため、ショートカット作成用プログラムを同梱します。\n- Snapdragon などの Arm 系 CPU 上での x86 エミュレーション実行では正しく動作しない可能性が高いため、これに対応します。",
         featuresTitle: "特徴",
         featuresText: [
-          { title: "Path List / Path List Proは簡単にファイル/フォルダパスを抽出できます", children: ["抽出対象としたいフォルダをアプリアイコン上にドラッグ＆ドロップするだけで、操作は非常に簡単です。"] },
-          { title: "プロ版の注目機能（その他の機能はreadmeをご確認ください）", children: ["Microsoft Excel ファイルでの出力に対応","ツリー構造での出力に対応","ファイルサイズ（KB）や更新日時などの情報も取得可能"] },
-          { title: "その他", children: ["機能の詳細については、GitHubの readme をご確認ください。"] }
+          { title: "Path List / Path List Proは簡単にファイル/フォルダパスを抽出できます",
+            children: ["抽出対象としたいフォルダをアプリアイコン上にドラッグ＆ドロップするだけで、操作は非常に簡単です。"]
+          },
+          { title: "プロ版の注目機能（その他の機能はreadmeをご確認ください）",
+            children: ["Microsoft Excel ファイルでの出力に対応","ツリー構造での出力に対応","ファイルサイズ（KB）や更新日時などの情報も取得可能"]
+          },
+          { title: "その他",
+            children: ["機能の詳細については、GitHubの readme をご確認ください。"]
+          }
         ],
         readmeButton: "readme を表示する",
         readmeLink: "https://github.com/Shintaro-Sugawara/PathList/blob/master/README_Japanese.md",
         usecasesTitle: "こんなときに便利",
         usecasesText: [
-          { title: "ChatGPT や Copilot にパスを渡して処理を依頼する", children: ["AI（LLM）はパスの一覧からフォルダ構造を解析できます。","相対パスを活用して、リンク入りの Markdown（.md）や HTML ファイルの作成を AI に依頼できます","コマンドプロンプトのコードや、バッチファイルのコードの作成を依頼できます"] },
-          { title: "コマンドプロンプトの操作が煩わしいとき", children: [`<pre><code>dir /b /a-d /s > %userprofile%\\desktop\\testFile.txt</code></pre> ファイル一覧の作成`,`<pre><code>dir /b /ad /s > %userprofile%\\desktop\\testFolder.txt</code></pre> フォルダ一覧の作成`,`<pre><code>tree /f > %userprofile%\\desktop\\testTree.txt</code></pre> ツリー構造の作成`] },
-          { title: "ファイル一覧やフォルダ構造をすばやくエクセルで確認したいとき（プロ版）", children: ["ドライブ容量を圧迫する、容量が大きなファイルを探すのに便利です。","拡張子を指定して特定のファイル形式だけを抽出"] }
+          { title: "ChatGPT や Copilot にパスを渡して処理を依頼する",
+            children: ["AI（LLM）はパスの一覧からフォルダ構造を解析できます。","相対パスを活用して、リンク入りの Markdown（.md）や HTML ファイルの作成を AI に依頼できます","コマンドプロンプトのコードや、バッチファイルのコードの作成を依頼できます"]
+          },
+          { title: "コマンドプロンプトの操作が煩わしいとき",
+            children: [`<pre><code>dir /b /a-d /s > %userprofile%\\desktop\\testFile.txt</code></pre> ファイル一覧の作成`,
+                       `<pre><code>dir /b /ad /s > %userprofile%\\desktop\\testFolder.txt</code></pre> フォルダ一覧の作成`,
+                       `<pre><code>tree /f > %userprofile%\\desktop\\testTree.txt</code></pre> ツリー構造の作成`]
+          },
+          { title: "ファイル一覧やフォルダ構造をすばやくエクセルで確認したいとき（プロ版）",
+            children: ["ドライブ容量を圧迫する、容量が大きなファイルを探すのに便利です。","拡張子を指定して特定のファイル形式だけを抽出"]
+          }
         ],
         downloadTitle: "入手方法",
         downloadText: "Microsoft Store からダウンロードしてください。",
         downloadButtonFree: "フリー版を Microsoft Store で入手",
         downloadButtonPro: "プロ版を Microsoft Store で入手",
         freeNotAvailableMsg: "フリー版は Microsoft Store での審査中です。",
-        titleVideo: "TitleImages/TitleVideo_JP.mp4",
+        titleVideo: "TitleImages/Demo_JP.mp4",
       },
       en: {
         subtitle: "Easily extract folder and file paths on Windows. A lightweight tool.",
-        updateNotice: "⚠️ The following updates will be included in a new release coming soon. If you have already downloaded the app, please wait a little while.\n- Manually created shortcuts may not work correctly, so a shortcut creation utility will be included.\n- The app may not work properly on Arm-based CPUs (such as Snapdragon) when running under x86 emulation. We will add support for this scenario.",
         featuresTitle: "Features",
         featuresText: [
-          { title: "Path List / Path List Pro can easily extract file/folder paths", children: ["Simply drag and drop the target folder onto the app icon. It's extremely easy to use."] },
-          { title: "Key Pro Features (see the readme for other features)", children: ["Supports export to Microsoft Excel","Supports tree structure export","Supports extraction of file size (KB) and timestamps"] },
-          { title: "Other", children: ["For details, please refer to the GitHub readme."] }
+          { title: "Path List / Path List Pro can easily extract file/folder paths",
+            children: ["Simply drag and drop the target folder onto the app icon. It's extremely easy to use."]
+          },
+          { title: "Key Pro Features (see the readme for other features)",
+            children: ["Supports export to Microsoft Excel","Supports tree structure export","Supports extraction of file size (KB) and timestamps"]
+          },
+          { title: "Other",
+            children: ["For details, please refer to the GitHub readme."]
+          }
         ],
         readmeButton: "View readme",
         readmeLink: "https://github.com/Shintaro-Sugawara/PathList/blob/master/README.md",
         usecasesTitle: "Typical Use Cases",
         usecasesText: [
-          { title: "Pass paths to ChatGPT or Copilot for processing", children: ["AI (LLM) can analyze folder structures from a list of paths.","You can ask the AI to create Markdown (.md) or HTML files with embedded links using relative paths","You can request the creation of Command Prompt scripts or batch files."] },
-          { title: "When using the Command Prompt is cumbersome", children: [`<pre><code>dir /b /a-d /s > %userprofile%\\desktop\\testFile.txt</code></pre> Create file list`,`<pre><code>dir /b /ad /s > %userprofile%\\desktop\\testFolder.txt</code></pre> Create folder list`,`<pre><code>tree /f > %userprofile%\\desktop\\testTree.txt</code></pre> Create folder tree`] },
-          { title: "Quickly check file/folder lists in Excel (Pro version)", children: ["Useful for finding large files that take up drive space.","Extract only specific file types by extension"] }
+          { title: "Pass paths to ChatGPT or Copilot for processing",
+            children: ["AI (LLM) can analyze folder structures from a list of paths.","You can ask the AI to create Markdown (.md) or HTML files with embedded links using relative paths","You can request the creation of Command Prompt scripts or batch files."]
+          },
+          { title: "When using the Command Prompt is cumbersome",
+            children: [`<pre><code>dir /b /a-d /s > %userprofile%\\desktop\\testFile.txt</code></pre> Create file list`,
+                       `<pre><code>dir /b /ad /s > %userprofile%\\desktop\\testFolder.txt</code></pre> Create folder list`,
+                       `<pre><code>tree /f > %userprofile%\\desktop\\testTree.txt</code></pre> Create folder tree`]
+          },
+          { title: "Quickly check file/folder lists in Excel (Pro version)",
+            children: ["Useful for finding large files that take up drive space.","Extract only specific file types by extension"]
+          }
         ],
         downloadTitle: "Download",
         downloadText: "Please download from the Microsoft Store.",
         downloadButtonFree: "Get the Free Version from Microsoft Store",
         downloadButtonPro: "Get the Pro Version from Microsoft Store",
         freeNotAvailableMsg: "The Free version is under review on Microsoft Store.",
-        titleVideo: "TitleImages/TitleVideo_EN.mp4",
+        titleVideo: "TitleImages/Demo_EN.mp4",
       },
       de: {
         subtitle: "Ordner- und Dateipfade unter Windows einfach extrahieren. Ein leichtes Tool.",
-        updateNotice: "⚠️ Die folgenden Updates werden in einer neuen Version enthalten sein, die in Kürze veröffentlicht wird. Falls Sie die Anwendung bereits heruntergeladen haben, warten Sie bitte noch ein wenig.\n- Manuell erstellte Verknüpfungen funktionieren möglicherweise nicht korrekt, daher wird ein Programm zur Erstellung von Verknüpfungen mitgeliefert.\n- Die Anwendung funktioniert möglicherweise nicht korrekt auf ARM-basierten CPUs (z. B. Snapdragon), wenn sie unter x86-Emulation ausgeführt wird. Wir werden Unterstützung dafür hinzufügen.",
         featuresTitle: "Funktionen",
         featuresText: [
-          { title: "Path List / Path List Pro kann Dateipfade/Ordnerpfade einfach extrahieren", children: ["Ziehen Sie einfach den Zielordner auf das App-Symbol – sehr einfach zu bedienen."] },
-          { title: "Wichtige Funktionen der Pro-Version (andere Funktionen siehe Readme)", children: ["Unterstützt Export in Microsoft Excel","Unterstützt Baumstruktur-Export","Unterstützt das Extrahieren von Dateigröße (KB) und Zeitstempeln"] },
-          { title: "Sonstiges", children: ["Weitere Informationen finden Sie im GitHub-Readme."] }
+          { title: "Path List / Path List Pro kann Dateipfade/Ordnerpfade einfach extrahieren",
+            children: ["Ziehen Sie einfach den Zielordner auf das App-Symbol – sehr einfach zu bedienen."]
+          },
+          { title: "Wichtige Funktionen der Pro-Version (andere Funktionen siehe Readme)",
+            children: ["Unterstützt Export in Microsoft Excel","Unterstützt Baumstruktur-Export","Unterstützt das Extrahieren von Dateigröße (KB) und Zeitstempeln"]
+          },
+          { title: "Sonstiges",
+            children: ["Weitere Informationen finden Sie im GitHub-Readme."]
+          }
         ],
         readmeButton: "readme anzeigen",
         readmeLink: "https://github.com/Shintaro-Sugawara/PathList/blob/master/README_German.md",
         usecasesTitle: "Typische Anwendungsfälle",
         usecasesText: [
-          { title: "Pfadlisten an ChatGPT oder Copilot übergeben", children: ["KI (LLM) kann die Ordnerstruktur aus einer Pfadliste analysieren.","Verwenden Sie relative Pfade, um die Erstellung von Markdown (.md) oder HTML-Dateien anzufordern.","Sie können die Erstellung von Befehlszeilen- oder Batch-Dateien anfordern."] },
-          { title: "Wenn die Arbeit mit der Eingabeaufforderung mühsam ist", children: [`<pre><code>dir /b /a-d /s > %userprofile%\\desktop\\testFile.txt</code></pre> Dateiliste erstellen`,`<pre><code>dir /b /ad /s > %userprofile%\\desktop\\testFolder.txt</code></pre> Ordnerliste erstellen`,`<pre><code>tree /f > %userprofile%\\desktop\\testTree.txt</code></pre> Baumstruktur erstellen`] },
-          { title: "Datei- oder Ordnerstrukturen schnell in Excel überprüfen (Pro-Version)", children: ["Nützlich, um große Dateien zu finden, die Speicherplatz beanspruchen.","Nur bestimmte Dateitypen nach Dateiendung extrahieren"] }
+          { title: "Pfadlisten an ChatGPT oder Copilot übergeben",
+            children: ["KI (LLM) kann die Ordnerstruktur aus einer Pfadliste analysieren.","Verwenden Sie relative Pfade, um die Erstellung von Markdown (.md) oder HTML-Dateien anzufordern.","Sie können die Erstellung von Befehlszeilen- oder Batch-Dateien anfordern."]
+          },
+          { title: "Wenn die Arbeit mit der Eingabeaufforderung mühsam ist",
+            children: [`<pre><code>dir /b /a-d /s > %userprofile%\\desktop\\testFile.txt</code></pre> Dateiliste erstellen`,
+                       `<pre><code>dir /b /ad /s > %userprofile%\\desktop\\testFolder.txt</code></pre> Ordnerliste erstellen`,
+                       `<pre><code>tree /f > %userprofile%\\desktop\\testTree.txt</code></pre> Baumstruktur erstellen`]
+          },
+          { title: "Datei- oder Ordnerstrukturen schnell in Excel überprüfen (Pro-Version)",
+            children: ["Nützlich, um große Dateien zu finden, die Speicherplatz beanspruchen.","Nur bestimmte Dateitypen nach Dateiendung extrahieren"]
+          }
         ],
         downloadTitle: "Download",
         downloadText: "Bitte laden Sie aus dem Microsoft Store herunter",
         downloadButtonFree: "Kostenlose Version im Microsoft Store herunterladen",
         downloadButtonPro: "Pro-Version im Microsoft Store herunterladen",
         freeNotAvailableMsg: "Die kostenlose Version befindet sich derzeit in der Überprüfung im Microsoft Store.",
-        titleVideo: "TitleImages/TitleVideo_DE.mp4",
+        titleVideo: "TitleImages/Demo_DE.mp4",
       }
     };
 
@@ -299,9 +344,8 @@
 
     function applyText() {
       const t = text[langCode];
-      document.getElementById("subtitle").innerText = t.subtitle;
-      document.getElementById("update-notice").innerText = t.updateNotice;
 
+      document.getElementById("subtitle").innerText = t.subtitle;
       document.getElementById("features-title").innerText = t.featuresTitle;
       createList(document.getElementById("features-text"), t.featuresText);
       document.getElementById("readme-button").innerText = t.readmeButton;
@@ -313,9 +357,9 @@
       document.getElementById("download-button-free").innerText = t.downloadButtonFree;
       document.getElementById("download-button-pro").innerText = t.downloadButtonPro;
 
+      // タイトル画像を言語ごとに設定
       const titleContainer = document.querySelector(".title-container");
       const titleImage = document.getElementById("title-image");
-
       if (langCode === "ja") titleImage.src = "TitleImages/Title_Main_JP.png";
       else if (langCode === "en") titleImage.src = "TitleImages/Title_Main_EN.png";
       else if (langCode === "de") titleImage.src = "TitleImages/Title_Main_DE.png";
