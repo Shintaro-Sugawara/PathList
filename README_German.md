@@ -5,15 +5,6 @@
 
 ---
 
-# ⚠️ Hinweis (Bitte lesen)
-
-- Die Anwendung ist so konzipiert, dass sie auf **Snapdragon (ARM-CPU) mit x64-Emulation** läuft, aber der Entwickler besitzt keinen ARM-basierten PC, daher wurden keine Tests durchgeführt.  
-   - Die Excel-Exportfunktion auf ARM-basierten CPUs wird **nicht unterstützt**.  
-- Die Unterstützung des Excel-Exports auf ARM-basierten PCs ist **derzeit nicht geplant**.  
-   - Da sowohl die ARM-Version als auch die x64-Version von Excel verfügbar sein müssten.
-
----
-
 Dieses Projekt hat zwei Editionen:
 - **Kostenlose Version**: MIT-lizenziert, Quellcode verfügbar  
 - **Pro-Version**: Proprietär, Quellcode geschlossen
@@ -36,10 +27,9 @@ Dieses Projekt hat zwei Editionen:
 
 # Path List / Path List Pro
 
-Dieses Tool erstellt vollständige Dateipfade (absolute Pfade) aus Ordnern – schnell und einfach.  
-Ziehen Sie einfach einen Ordner auf das Anwendungssymbol, um zu starten.  
-In der Pro-Version können Sie außerdem Inhalte in Baumstruktur extrahieren und die Ergebnisse nach Excel oder in ähnliche Formate exportieren.
-
+This tool ist ein schlankes Tool, das vollständige Dateipfade (absolute Pfade) aus Ordnern schnell und einfach generiert.  
+In der Pro-Version können Sie außerdem Ordnerinhalte in einer Baumstruktur extrahieren und die Ergebnisse nach Excel oder in ähnliche Formate exportieren.
+  
 Es unterstützt Unicode vollständig und stellt sicher, dass Zeichen jeder Sprache korrekt verarbeitet werden.  
 Die Benutzeroberfläche der Anwendung ist auf Japanisch, Englisch und Deutsch verfügbar, weitere Sprachen sind geplant.
 
@@ -51,13 +41,14 @@ Sie kommuniziert nicht mit externen Servern und sammelt keine persönlichen Date
 ## Verwendung (Kostenlose und Pro-Versionen)
 
 ![UsageAndUI_DE](docs/UsageAndUI/UsageAndUI_DE.png)
-(Nur beim ersten Gebrauch) Starten Sie das `Path List Shortcut` oder `Path List Pro Shortcut` über das Startmenü, um eine Verknüpfung auf dem Desktop zu erstellen.  
-
-Ziehen Sie einen Ordner (oder dessen Verknüpfung) auf das Anwendungssymbol.  
-- Sie können mehrere Ordner gleichzeitig ziehen und ablegen. (Baummodus wird nicht unterstützt.)  
-Im angezeigten Dialog wählen Sie die Ausgabeoptionen und klicken auf **[OK]**.  
-- Wenn Sie die Standardeinstellungen verwenden möchten, drücken Sie einfach **[Enter]**.  
-Nach Abschluss der Ausgabe wird eine Listen-Datei auf Ihrem Desktop erstellt.
+1. Starten Sie die Anwendung.  
+2. Ziehen Sie einen Ordner (oder dessen Verknüpfung) auf den angezeigten Dialog. Ob das Ziehen und Ablegen  abgeschlossen ist, erkennen Sie an der Anzeige im Dialog.
+   - Wenn Sie eine Datei (oder deren Verknüpfung) ziehen und ablegen, wird das übergeordnete Verzeichnis  dieser Datei als Extraktionsziel verwendet.  
+   - Sie können mehrere Ordner und mehrere Dateien gleichzeitig ziehen und ablegen. (Baummodus wird nicht unterstützt.)  
+   Dieses Tool stellt sicher, dass derselbe Ordner nicht mehrfach in der Ausgabe erscheint.  
+3. Wählen Sie im Dialog die gewünschten Ausgabeoptionen und klicken Sie auf **[OK]**.  
+   - Wenn Sie die Standardeinstellungen verwenden möchten, drücken Sie einfach **[Enter]**.  
+4. Nach Abschluss der Ausgabe wird eine Listen-Datei auf Ihrem Desktop erstellt.
 
 ---
 
@@ -66,9 +57,9 @@ Nach Abschluss der Ausgabe wird eine Listen-Datei auf Ihrem Desktop erstellt.
 Die Anzeigesprache der Anwendung wechselt automatisch entsprechend den Windows-Gebietsschemaeinstellungen.  
 Beispiele für die Benutzeroberfläche in jeder Sprache sind in den jeweiligen sprachspezifischen README-Dateien aufgeführt.
 
-- [Kostenlose Version UI](docs/Screenshot_03_German/11_Dialog_Free.png)  
-- [Pro-Version UI (Listenmodus)](docs/Screenshot_03_German/01_Dialog_List_Pro.png)  
-- [Pro-Version UI (Baummodus)](docs/Screenshot_03_German/02_Dialog_Tree_Pro.png)
+- [Kostenlose Version UI](docs/Screenshot_03_German/11_Dialog_List_Free_Before.png)  
+- [Pro-Version UI (Listenmodus)](docs/Screenshot_03_German/01_Dialog_List_Pro_Before.png)  
+- [Pro-Version UI (Baummodus)](docs/Screenshot_03_German/03_Dialog_Tree_Pro.png)
 
 ---
 
@@ -211,16 +202,14 @@ Bitte beziehen Sie sich auf Folgendes für die Testfälle und Beispielordner:
 | Version | Datum       | Beschreibung                                                                 |
 |---------|------------|----------------------------------------------------------------------------|
 | 1.00    | 08.11.2025 | Erste Veröffentlichung                                                      |
-| 1.01    | 14.11.2025 | Fehler behoben, die während des Microsoft Store-Einreichungsprozesses festgestellt wurden |
-| 1.02    | 19.11.2025 | 1. Hinzufügen einer Funktion zum Erstellen von Verknüpfungen (in einigen Fällen kann der Standardvorgang zum Erstellen von Verknüpfungen den Pfad des abgelegten Ordners nicht an die Anwendung übergeben) <br> 2. Neu gestaltet, um das Abrufen von Ordnerinhalten auch in x86-Emulationsumgebungen auf Snapdragon-(ARM-)CPUs zu ermöglichen |
+| 1.10    | 24.11.2025 | Für die Verteilung im Microsoft Store optimiert (MSIX-Funktionalität verbessert) |
 
 ### Pro-Version
 
 | Version | Datum       | Beschreibung                                                                 |
 |---------|------------|----------------------------------------------------------------------------|
 | 1.00    | 08.11.2025 | Erste Veröffentlichung                                                      |
-| 1.01    | 19.11.2025 | Version 1.02 wurde übersprungen, um die Versionsnummer mit der Free-Version abzustimmen |
-| 1.02    | 19.11.2025 | 1. Hinzufügen einer Funktion zum Erstellen von Verknüpfungen (in einigen Fällen kann der Standardvorgang zum Erstellen von Verknüpfungen den Pfad des abgelegten Ordners nicht an die Anwendung übergeben) <br> 2. Neu gestaltet, um das Abrufen von Ordnerinhalten auch in x86-Emulationsumgebungen auf Snapdragon-(ARM-)CPUs zu ermöglichen |
+| 1.10    | 24.11.2025 | Für die Verteilung im Microsoft Store optimiert (MSIX-Funktionalität verbessert) |
 
 ---
 
@@ -257,6 +246,6 @@ Weitere Einzelheiten finden Sie im folgenden Dokument.
 - Der Binärcode/Quellcode der Pro-Version ist geschlossen.  
   Weitergabe, Modifikation, Dekompilierung und Reverse Engineering sind verboten.  
 - Der Quellcode der kostenlosen Version wird unter der **MIT-Lizenz** veröffentlicht.  
-[PathList_1.03.py auf GitHub ansehen](https://github.com/Shintaro-Sugawara/PathList/blob/master/src/PathList_1.03.py)
+[PathList_1.10.py auf GitHub ansehen](https://github.com/Shintaro-Sugawara/PathList/blob/master/src/PathList_1.10.py)
 - Abgesehen von der Microsoft Store-Zahlung für die Pro-Version sind keine zusätzlichen Lizenzgebühren erforderlich.  
 - © 2025 **S. Sugawara** Alle Rechte vorbehalten.

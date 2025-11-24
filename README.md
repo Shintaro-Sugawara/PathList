@@ -5,15 +5,6 @@
 
 ---
 
-# ⚠️ Notice (Please Read)
-
-- The application is designed to run on **Snapdragon (Arm-based CPU) with x64 emulation**, but the developer does not own an Arm-based PC, so testing has not been conducted.  
-   - The Excel export feature on Arm-based CPU environments is **not supported**.  
-- Support for Excel export on Arm-based PCs is **not planned** at this time.  
-   - Because both the Arm version and the x64 version of Excel would need to be available.
-
----
-
 This project has two editions:
 - **Free version**: MIT licensed, source code available  
 - **Pro version**: Proprietary, closed source
@@ -37,9 +28,8 @@ This project has two editions:
 # Path List / Path List Pro
 
 This tool is a lightweight tool that quickly and easily generates a list of full file paths (absolute paths) from folders.  
-Simply drag and drop a folder onto the application icon to start.  
 In the Pro version, you can also extract folder contents in tree structure and export the results to Excel or similar formats.
-
+  
 It fully supports Unicode, ensuring correct handling of characters from any language.  
 The application interface is available in Japanese, English, and German, with more languages planned.
 
@@ -51,13 +41,14 @@ It does not communicate with external servers or collect any personal data, ensu
 ## How to Use (Free and Pro versions)
 
 ![UsageAndUI_EN](docs/UsageAndUI/UsageAndUI_EN.png)
-(For first-time use only) Launch the `Path List Shortcut` or `Path List Pro Shortcut` from the Start menu to create a desktop shortcut.  
-
-Drag and drop a folder (or its shortcut) onto the application icon.  
-- You can drag and drop multiple folders at once. (Tree mode is not supported.)  
-In the dialog that appears, select the output settings and click **[OK]**.  
-- If you want to use the default settings, just press **[Enter]**.  
-After the output is complete, a list file will be created on your desktop.
+1. Launch the application.  
+2. Drag and drop a folder (or its shortcut) onto the displayed dialog. You can identify whether the drag-and-drop has been completed by the display on the dialog.  
+   - If you drag and drop a file (or its shortcut), the parent directory of that file will be the extraction target.  
+   - You can drag and drop multiple folders and multiple files at the same time. (Tree mode is not supported.)
+     This tool ensures that the same folder is not included more than once in the output.  
+3. In the dialog, select the desired output settings and click **[OK]**.  
+   - If you want to use the default settings, just press **[Enter]**.  
+4. After the output is complete, a list file will be created on your desktop.
 
 ---
 
@@ -66,9 +57,9 @@ After the output is complete, a list file will be created on your desktop.
 The application's display language automatically switches according to the Windows locale settings.  
 Examples of the user interface in each language are shown in the corresponding language-specific README files.
 
-- [Free version UI](docs/Screenshot_01_English/11_Dialog_Free.png)  
-- [Pro version UI (List mode)](docs/Screenshot_01_English/01_Dialog_List_Pro.png)  
-- [Pro version UI (Tree mode)](docs/Screenshot_01_English/02_Dialog_Tree_Pro.png)
+- [Free version UI](docs/Screenshot_01_English/11_Dialog_List_Free_Before.png)  
+- [Pro version UI (List mode)](docs/Screenshot_01_English/01_Dialog_List_Pro_Before.png)  
+- [Pro version UI (Tree mode)](docs/Screenshot_01_English/03_Dialog_Tree_Pro.png)
 
 ---  
 
@@ -206,16 +197,14 @@ Please refer to the following for the test cases and sample folders used:
 | Version | Date       | Description                                                                 |
 |---------|------------|-----------------------------------------------------------------------------|
 | 1.00    | 2025-11-08 | Initial release                                                             |
-| 1.01    | 2025-11-14 | Fixed issues found during Microsoft Store submission process               |
-| 1.02    | 2025-11-19 | 1. Added a shortcut creation feature (in some cases, the standard shortcut creation process cannot pass the path of the dropped folder to the application) <br> 2. Redesigned to allow folder contents to be retrieved even in x86 emulation environments on Snapdragon (ARM) CPUs |
+| 1.10    | 2025-11-24 | Optimized for Microsoft Store distribution (improved MSIX functionality)    |
 
 ### Pro Version
 
 | Version | Date       | Description                                                                 |
 |---------|------------|-----------------------------------------------------------------------------|
 | 1.00    | 2025-11-08 | Initial release                                                             |
-| 1.01    | 2025-11-19 | Version 1.02 was skipped to align version numbers with the Free edition     |
-| 1.02    | 2025-11-19 | 1. Added a shortcut creation feature (in some cases, the standard shortcut creation process cannot pass the path of the dropped folder to the application) <br> 2. Redesigned to allow folder contents to be retrieved even in x86 emulation environments on Snapdragon (ARM) CPUs |
+| 1.10    | 2025-11-24 | Optimized for Microsoft Store distribution (improved MSIX functionality)    |
 
 ---
 
@@ -251,6 +240,6 @@ For more details, please refer to the documentation below.
 - All rights to **Path List / Path List Pro** belong to the developer.  
 - The Pro version binary/code is closed-source. Redistribution, modification, decompilation, and reverse engineering are prohibited.  
 - The source code of the free version is released under the **MIT License**.  
-[View PathList_1.03.py on GitHub](https://github.com/Shintaro-Sugawara/PathList/blob/master/src/PathList_1.03.py)
+[View PathList_1.10.py on GitHub](https://github.com/Shintaro-Sugawara/PathList/blob/master/src/PathList_1.10.py)
 - Other than the Microsoft Store payment for the Pro version, no additional license fees are required.  
 - © 2025 **S. Sugawara** All rights reserved.
