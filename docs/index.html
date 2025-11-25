@@ -188,7 +188,7 @@
       <h2 id="download-title"></h2>
       <p id="download-text"></p>
       <div class="button-container">
-        <a href="#" class="button" id="download-button-free"></a>
+        <a href="https://apps.microsoft.com/detail/9NLS438Q5WCL" class="button" id="download-button-free"></a>
         <a href="https://apps.microsoft.com/detail/9p3c6rxvnmsw?hl=ja-JP&gl=JP" class="button" id="download-button-pro"></a>
       </div>
     </section>
@@ -245,7 +245,6 @@
         downloadText: "Microsoft Store からダウンロードしてください。",
         downloadButtonFree: "フリー版を Microsoft Store で入手",
         downloadButtonPro: "プロ版を Microsoft Store で入手",
-        freeNotAvailableMsg: "フリー版は Microsoft Store での審査中です。",
         titleVideo: "TitleImages/Demo_JP.mp4",
       },
 
@@ -283,7 +282,6 @@
         downloadText: "Please download from the Microsoft Store.",
         downloadButtonFree: "Get the Free Version from Microsoft Store",
         downloadButtonPro: "Get the Pro Version from Microsoft Store",
-        freeNotAvailableMsg: "The Free version is under review on Microsoft Store.",
         titleVideo: "TitleImages/Demo_EN.mp4",
       },
 
@@ -321,7 +319,6 @@
         downloadText: "Bitte laden Sie aus dem Microsoft Store herunter",
         downloadButtonFree: "Kostenlose Version im Microsoft Store herunterladen",
         downloadButtonPro: "Pro-Version im Microsoft Store herunterladen",
-        freeNotAvailableMsg: "Die kostenlose Version befindet sich derzeit in der Überprüfung im Microsoft Store.",
         titleVideo: "TitleImages/Demo_DE.mp4",
       }
     };
@@ -382,12 +379,6 @@
     }
 
     applyText();
-
-    // フリー版ボタンの挙動
-    document.getElementById("download-button-free").addEventListener("click", function (e) {
-      e.preventDefault();
-      alert(text[langCode].freeNotAvailableMsg);
-    });
 
     // モーダル閉じる
     document.getElementById("modal-close").onclick = () => {

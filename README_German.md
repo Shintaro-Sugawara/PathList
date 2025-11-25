@@ -20,7 +20,7 @@ Dieses Projekt hat zwei Editionen:
 
 ## Wo Sie die Anwendung erhalten (Microsoft Store)
 
-- [Path List (Kostenlose Version)] — Download-Link wird nach der Veröffentlichung hinzugefügt.  
+- [Path List (Kostenlose Version)](https://apps.microsoft.com/detail/9NLS438Q5WCL)  
 - [Path List Pro (Pro-Version)](https://apps.microsoft.com/detail/9P3C6RXVNMSW)
 
 ---

@@ -20,7 +20,7 @@
 
 ## ■ アプリの入手先（Microsoft Store）
 
--  [Path List（フリー版）] ※公開後にリンク先を掲載予定（2025.11予定）
+-  [Path List（フリー版）](https://apps.microsoft.com/detail/9NLS438Q5WCL)  
 -  [Path List Pro（プロ版）](https://apps.microsoft.com/detail/9P3C6RXVNMSW)
 
 ---
